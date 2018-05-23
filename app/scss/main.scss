@@ -1,0 +1,73 @@
+@import 'variables.scss';
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background: $body-color;
+}
+
+.inner-wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1{
+	font-family: $header-font;
+	font-weight: bold;
+	color: $header-color;
+	width: 60%;
+	font-size: 2.5em;
+	margin-top: 4em;
+	margin-bottom: 0.625em;
+}
+
+@mixin button-bg($bg) {
+	background: $bg;
+	
+	&:hover {
+	background:darken($bg,8%);
+	transition: all 0.3s ease;
+	}
+	
+	&:active {
+	background:darken($bg,25%);
+	} 
+}
+
+.btn {
+	color:white;
+	text-decoration:none;
+	margin-top: 10px;
+	padding:5px 10px;
+	border-radius:3px;
+	font-family: $header-font;
+	font-size:1.5em;
+	font-weight: bold;
+}
+
+.btn-green {
+	@include button-bg(#2ecc71);
+}
+
+.atf-wrapper{
+	min-height: calc(100vh - 4em);
+	margin-bottom: 2em;
+	text-align: left;
+	position: relative;
+	top: 4em;
+	overflow: auto;
+	background-color: #ebebeb;
+
+	p{
+		font-family: $body-font;
+		font-weight: 600;
+		color: $header-color;
+		font-size: 1em;
+		line-height: 1.25em;
+		margin: 1em 0;
+		width:60%;
+	}
+}
+
+
+

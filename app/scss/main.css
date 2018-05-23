@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+@import url("https://fonts.googleapis.com/css?family=Maitree");
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #ebebeb; }
+
+.inner-wrapper {
+  width: 90%;
+  margin: 0 auto; }
+
+h1 {
+  font-family: "Comfortaa", cursive;
+  font-weight: bold;
+  color: #5b5b5b;
+  width: 60%;
+  font-size: 2.5em;
+  margin-top: 4em;
+  margin-bottom: 0.625em; }
+
+#above-the-fold .wrapper {
+  min-height: calc(100vh - 4em);
+  margin-bottom: 2em;
+  /*background: url(../images/bg.png) no-repeat;
+  background-position-x: center;
+  background-size: 100% auto;
+  background-position-y: bottom;*/
+  text-align: left;
+  position: relative;
+  top: 4em;
+  overflow: auto;
+  background-color: #ebebeb; }
+#above-the-fold p {
+  font-family: "Maitree", serif;
+  font-weight: 700;
+  color: #5b5b5b;
+  width: 60%;
+  font-size: 1em;
+  text-align: left;
+  line-height: 2em; }
+
+/*# sourceMappingURL=main.css.map */

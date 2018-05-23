@@ -28,7 +28,7 @@ gulp.task('sass', function() {
     return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
         .pipe(sass().on('error', sass.logError)) // Passes it through a gulp-sass, log errors to console
         .pipe(concat('styles.css'))
-        .pipe(uglify())
+        //.pipe(uglify())
         .pipe(rename({
          basename: "styles",
           suffix: ".min",
@@ -42,20 +42,6 @@ gulp.task('sass', function() {
 });
 
 
-gulp.task('sass', function() {
-    return gulp.src('stylesheets/**/*.scss')
-        .pipe(sass())
-        .pipe(concat('styles.css'))
-        .pipe(uglify())
-
-        // .pipe(rename({
-        //  basename: "styles",
-        //   suffix: ".min",
-        //   extname: ".css"
-        //  }))
-
-        .pipe(gulp.dest('css'))
-});
 
 
 // Watchers
@@ -72,7 +58,7 @@ gulp.task('useref', function() {
 
     return gulp.src('app/*.html')
         .pipe(useref())
-        .pipe(gulpIf('*.js', uglify()))
+        //.pipe(gulpIf('*.js', uglify()))
         .pipe(gulpIf('*.css', cssnano()))
         .pipe(gulp.dest('dist'));
 });

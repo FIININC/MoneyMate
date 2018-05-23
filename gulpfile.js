@@ -9,6 +9,8 @@ var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
+const concat = require('gulp-concat');
+const rename = require('gulp-rename');
 
 // Development Tasks
 // -----------------
@@ -25,11 +27,36 @@ gulp.task('browserSync', function() {
 gulp.task('sass', function() {
     return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
         .pipe(sass().on('error', sass.logError)) // Passes it through a gulp-sass, log errors to console
+        .pipe(concat('styles.css'))
+        .pipe(uglify())
+        .pipe(rename({
+         basename: "styles",
+          suffix: ".min",
+          extname: ".css"
+         }))
         .pipe(gulp.dest('app/css')) // Outputs it in the css folder
+
         .pipe(browserSync.reload({ // Reloading with Browser Sync
             stream: true
         }));
 });
+
+
+gulp.task('sass', function() {
+    return gulp.src('stylesheets/**/*.scss')
+        .pipe(sass())
+        .pipe(concat('styles.css'))
+        .pipe(uglify())
+
+        // .pipe(rename({
+        //  basename: "styles",
+        //   suffix: ".min",
+        //   extname: ".css"
+        //  }))
+
+        .pipe(gulp.dest('css'))
+});
+
 
 // Watchers
 gulp.task('watch', function() {

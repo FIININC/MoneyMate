@@ -1,12 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+﻿@import url("https://fonts.googleapis.com/css?family=Comfortaa");
 @import url("https://fonts.googleapis.com/css?family=Maitree");
 html, body {
   margin: 0;
   padding: 0;
   background: #ebebeb; }
 
-.inner-wrapper {
-  width: 90%;
+/*-- General Wrapper --*/
+.container-wrapper {
+  height: 100vh;
+  width: 85%;
   margin: 0 auto; }
 
 h1 {
@@ -15,28 +17,146 @@ h1 {
   color: #5b5b5b;
   width: 60%;
   font-size: 2.5em;
-  margin-top: 4em;
+  margin-top: 2.75em;
   margin-bottom: 0.625em; }
 
-#above-the-fold .wrapper {
-  min-height: calc(100vh - 4em);
-  margin-bottom: 2em;
-  /*background: url(../images/bg.png) no-repeat;
-  background-position-x: center;
-  background-size: 100% auto;
-  background-position-y: bottom;*/
+/*-- Apply Now Button --*/
+.btn {
+  color: white;
+  text-decoration: none;
+  padding: 0.8em;
+  border-radius: 0.5em;
+  font-family: "Comfortaa", cursive;
+  font-size: 1em;
+  font-weight: bold; }
+
+.btn-green {
+  background: #97c41f; }
+  .btn-green:hover {
+    background: #7ca119;
+    transition: all 0.3s ease; }
+  .btn-green:active {
+    background: #42560e; }
+
+.btn-red {
+  background: #d74548;
+  padding: 0.5em 1em;
+  font-family: "Maitree", serif;
+  font-size: 0.75em; }
+  .btn-red:hover {
+    background: #c82b2e;
+    transition: all 0.3s ease; }
+  .btn-red:active {
+    background: #811c1e; }
+
+/*HEADER START*/
+header {
+  /*-- Background Gradient --*/
+  background: #f5f8fa;
+  background: -moz-linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 46%, #54939e 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #f5f8fa), color-stop(46%, #f5f8fa), color-stop(100%, #54939e));
+  background: -webkit-linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 46%, #54939e 100%);
+  background: -o-linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 46%, #54939e 100%);
+  background: -ms-linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 46%, #54939e 100%);
+  background: linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 46%, #54939e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f8fa', endColorstr='#54939e', GradientType=1 );
+  font-family: "Maitree", serif;
+  width: 100%;
+  height: 3.125em;
+  font-size: 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  /*BRANDING --- General --- STARTS*/
+  /*BRANDING --- General --- ENDS*/ }
+  header .logo {
+    float: left;
+    height: 2.5em;
+    padding: 0.9375em 0;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.25em; }
+    header .logo a img {
+      height: 1.55em;
+      position: relative;
+      bottom: 1.25em; }
+  header nav {
+    float: right;
+    margin-top: 1.25em; }
+  header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1em;
+    font-weight: bold; }
+    header a:hover {
+      color: #141616;
+      font-weight: bold;
+      transition: all 1s; }
+    header a:active {
+      color: #141616;
+      font-weight: bold;
+      transition: all 1s; }
+  header .highlight, header .current a {
+    color: #42a159;
+    font-weight: bold; }
+  header li {
+    float: left;
+    display: inline;
+    padding: 0 1.25em 0 1.25em; }
+
+.header-wrapper {
+  width: 85%;
+  height: 3.125em;
+  float: centre; }
+
+.navbar-nav {
+  float: right;
+  position: relative;
+  bottom: 1.25em; }
+
+.collapsed {
+  border: none;
+  position: relative;
+  bottom: 1.25em; }
+
+.navbar-default {
+  transition: 500ms ease;
+  border: 0 !important; }
+  .navbar-default .scrolled {
+    box-shadow: 0px 10px 55px -16px rgba(59, 59, 59, 0.66); }
+
+/*---END---*/
+/*NAV --- General*/
+/*HEADER END*/
+/*--ABOVE THE FOLD--*/
+.atf-wrapper {
+  margin-bottom: 12em;
   text-align: left;
   position: relative;
-  top: 4em;
+  top: 3em;
   overflow: auto;
-  background-color: #ebebeb; }
-#above-the-fold p {
-  font-family: "Maitree", serif;
-  font-weight: 700;
-  color: #5b5b5b;
-  width: 60%;
-  font-size: 1em;
-  text-align: left;
-  line-height: 2em; }
-
-/*# sourceMappingURL=main.css.map */
+  /*-- Background Gradient --*/
+  background: #f5f8fa;
+  background: -moz-linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 46%, #54939e 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #f5f8fa), color-stop(46%, #f5f8fa), color-stop(100%, #54939e));
+  background: -webkit-linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 46%, #54939e 100%);
+  background: -o-linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 46%, #54939e 100%);
+  background: -ms-linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 46%, #54939e 100%);
+  background: linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 46%, #54939e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f8fa', endColorstr='#54939e', GradientType=1 );
+  /*-- Inner Text --*/ }
+  .atf-wrapper p {
+    font-family: "Maitree", serif;
+    font-weight: 600;
+    color: #5b5b5b;
+    font-size: 1em;
+    line-height: 1.25em;
+    margin: 1em 0;
+    width: 55%; }
+  .atf-wrapper .btn-wrapper {
+    margin-top: 2em;
+    float: left;
+    height: 2em; }

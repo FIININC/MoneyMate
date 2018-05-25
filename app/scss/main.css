@@ -6,7 +6,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #ebebeb; }
+  background: #fafafa; }
 
 /*-- General - End --*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -26,6 +26,14 @@ h2 {
   font-size: 2em;
   margin-top: 2em;
   margin-bottom: 0.625em; }
+
+mark {
+  background-color: #efefef;
+  display: inline-block;
+  line-height: 0.3em;
+  padding: 0 1em 0.5em 1em;
+  border-radius: 0.5em;
+  color: #54939e; }
 
 /*-- Title and Sub-titles - End --*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -212,7 +220,7 @@ header {
         height: 8em; }
     .atf-wrapper .counter-wrapper .counter-text-wrapper {
       font-family: "Comfortaa", cursive;
-      colour: #ebebeb;
+      colour: #fafafa;
       font-weight: bold;
       text-align: center;
       /*-- The Main Text - Starts --*/
@@ -241,5 +249,52 @@ header {
 /*--ABOVE THE FOLD - Ends --*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-- HOW IT WORKS - Starts --*/
+.hiw-wrapper {
+  height: 100%;
+  width: 100%;
+  font-family: "Maitree", serif;
+  text-align: center;
+  background-color: #fafafa; }
+
 /*-- HOW IT WORKS - Ends --*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-- MONEYMATE CALCULATOR - Starts --*/
+.mmc-wrapper {
+  height: 100%;
+  width: 100%;
+  font-family: "Maitree", serif;
+  text-align: center;
+  background-color: #fafafa; }
+
+/*-- MONEYMATE CALCULATOR - Ends --*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-- WHY US - Starts --*/
+.wu-wrapper {
+  height: 100%;
+  width: 100%;
+  font-family: "Maitree", serif;
+  text-align: center;
+  background-color: #fafafa; }
+
+/*-- WHY US - Ends --*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-- FAQs - Starts --*/
+.faq-wrapper {
+  height: 100%;
+  width: 100%;
+  font-family: "Maitree", serif;
+  text-align: center;
+  background-color: #fafafa; }
+
+/*-- FAQs - Ends --*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-- TESTIMONIALS - Starts --*/
+.ttm-wrapper {
+  height: 100%;
+  width: 100%;
+  font-family: "Maitree", serif;
+  text-align: center;
+  background-color: #fafafa; }
+
+/*-- TESTIMONIALS - Ends --*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/

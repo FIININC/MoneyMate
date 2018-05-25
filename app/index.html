@@ -34,6 +34,7 @@
         
         <!--JavaScript Starts-->
         <script src="js/jquery.min.js"></script>
+        <script src="js/header.js"></script>
         <script src="js/footer.js"></script>
         <!--JavaScript Ends-->
 
@@ -43,24 +44,7 @@
 
         <!--Header Starts-->
         <header>
-            <div class="header-wrapper">
-                <nav>
-                    <div class="logo">
-                        <a href="#"><img alt="MoneyMate" src="images/MoneyMateLogo.png"/></a>
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="navbar-nav" id="main-menu">
-                        <ul>
-                            <li><a href="#" class="btn btn-red">APPLY NOW</a></li>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">How It Works</a></li>
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="#">Log In</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+            <div common-header="header.html"></div>
         </header>
         <!--Header Ends-->
 
@@ -81,7 +65,7 @@
                             MoneyMate is a fast and friendly personal loan service that allows you to take care of your instant cash needs, while also helping you create a savings cushion so that you don’t find yourself applying for a payday loan ever again.
                         </p>
                         <div class="btn-wrapper">
-                            <a href="#" class="btn btn-green">APPLY NOW</a>
+                            <a href="#money_mate_calculator" class="btn btn-green">APPLY NOW</a>
                         </div>
                     </div>
                     <div class="atf-img-wrapper">
@@ -145,45 +129,45 @@
         <!-- SECTION: Above The Fold : Ends -->
 
         <!-- SECTION: How It Works : Starts -->
-        <section id="how_it_works">
-            <div>
-                <h2><span>How It Works</span></h2>
+        <section id="how_it_works" class="hiw-wrapper">
+            <div class="container-wrapper">
+                <h2><mark>How It Works</mark></h2>
 
             </div>
         </section>
         <!-- SECTION: How It Works : Ends -->
 
         <!-- SECTION: Money Mate Calculator : Starts -->
-        <section id="money_mate_calculator">
-            <div>
-                <h2><span>MoneyMate Calculator</span></h2>
+        <section id="money_mate_calculator" class="mmc-wrapper">
+            <div class="container-wrapper">
+                <h2><mark>MoneyMate Calculator</mark></h2>
 
             </div>
         </section>
         <!-- SECTION: Money Mate Calculator : Ends -->
 
         <!-- SECTION: Why Us? : Starts -->
-        <section id="why_us">
-            <div>
-                <h2><span>Why Us</span></h2>
+        <section id="why_us" class="wu-wrapper">
+            <div class="container-wrapper">
+                <h2><mark>Why Us</mark></h2>
 
             </div>
         </section>
         <!-- SECTION: Why Us? : Ends -->
 
         <!-- SECTION: FAQ : Starts -->
-        <section id="faq">
-            <div>
-                <h2><span>FAQs</span></h2>
+        <section id="faq" class="faq-wrapper">
+            <div class="container-wrapper">
+                <h2><mark>FAQs</mark></h2>
 
             </div>
         </section>
         <!-- SECTION: FAQ : Ends -->
 
         <!-- SECTION: Testimonials : Starts -->
-        <section id="testimonials">
-            <div>
-                <h2><span>Testimonials</span></h2>
+        <section id="testimonials" class="ttm-wrapper">
+            <div class="container-wrapper">
+                <h2><mark>Testimonials</mark></h2>
 
             </div>
         </section>
@@ -197,6 +181,7 @@
 
         <!--JavaScript Starts-->
         <script>
+            includeHeader(); //Includes the Header design
             includeFooter(); //Includes the Footer design
         </script>
         <!--JavaScript Ends-->

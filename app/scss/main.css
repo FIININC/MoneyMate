@@ -1,25 +1,50 @@
-﻿@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+﻿/*-- Declaring the Import SCSS Files --*/
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
 @import url("https://fonts.googleapis.com/css?family=Maitree");
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-- General - Start --*/
 html, body {
   margin: 0;
   padding: 0;
   background: #ebebeb; }
 
-/*-- General Wrapper --*/
-.container-wrapper {
-  height: 100vh;
-  width: 85%;
-  margin: 0 auto; }
-
+/*-- General - End --*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-- Title and Sub-titles - Sart --*/
 h1 {
   font-family: "Comfortaa", cursive;
   font-weight: bold;
   color: #5b5b5b;
-  width: 60%;
   font-size: 2.5em;
   margin-top: 2.75em;
   margin-bottom: 0.625em; }
 
+h2 {
+  font-family: "Comfortaa", cursive;
+  font-weight: bold;
+  color: #54939e;
+  font-size: 2em;
+  margin-top: 2em;
+  margin-bottom: 0.625em; }
+
+/*-- Title and Sub-titles - End --*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-- General Wrapper - Start --*/
+.container-wrapper {
+  height: 100%;
+  width: 90%;
+  margin: 0 auto; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto; }
+
+.grid-item {
+  padding: 0em 1.8em 0em 1.8em;
+  text-align: center; }
+
+/*-- General Wrapper - End --*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-- Apply Now Button --*/
 .btn {
   color: white;
@@ -31,17 +56,17 @@ h1 {
   font-weight: bold; }
 
 .btn-green {
-  background: #97c41f; }
+  background: #94bf1f; }
   .btn-green:hover {
-    background: #7ca119;
+    background: #799c19;
     transition: all 0.3s ease; }
   .btn-green:active {
-    background: #42560e; }
+    background: #3f510d; }
 
 .btn-red {
   background: #d74548;
   padding: 0.5em 1em;
-  font-family: "Maitree", serif;
+  font-family: "Comfortaa", cursive;
   font-size: 0.75em; }
   .btn-red:hover {
     background: #c82b2e;
@@ -49,114 +74,172 @@ h1 {
   .btn-red:active {
     background: #811c1e; }
 
-/*HEADER START*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-- HEADER - START --*/
 header {
-  /*-- Background Gradient --*/
-  background: #f5f8fa;
-  background: -moz-linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 46%, #54939e 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, #f5f8fa), color-stop(46%, #f5f8fa), color-stop(100%, #54939e));
-  background: -webkit-linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 46%, #54939e 100%);
-  background: -o-linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 46%, #54939e 100%);
-  background: -ms-linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 46%, #54939e 100%);
-  background: linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 46%, #54939e 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f8fa', endColorstr='#54939e', GradientType=1 );
-  font-family: "Maitree", serif;
+  font-family: "Comfortaa", cursive;
   width: 100%;
-  height: 3.125em;
-  font-size: 1em;
+  height: 3.25em;
+  background: transparent;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
-  /*BRANDING --- General --- STARTS*/
-  /*BRANDING --- General --- ENDS*/ }
-  header .logo {
-    float: left;
-    height: 2.5em;
-    padding: 0.9375em 0;
-    font-weight: bold;
-    font-size: 1em;
-    line-height: 1.25em; }
-    header .logo a img {
-      height: 1.55em;
-      position: relative;
-      bottom: 1.25em; }
-  header nav {
-    float: right;
-    margin-top: 1.25em; }
-  header a {
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 1em;
-    font-weight: bold; }
-    header a:hover {
-      color: #141616;
-      font-weight: bold;
-      transition: all 1s; }
-    header a:active {
-      color: #141616;
-      font-weight: bold;
-      transition: all 1s; }
-  header .highlight, header .current a {
-    color: #42a159;
-    font-weight: bold; }
-  header li {
-    float: left;
-    display: inline;
-    padding: 0 1.25em 0 1.25em; }
+  font-size: 1em;
+  /*-- Header Container - Starts --*/
+  /*-- Header Container - Ends --*/ }
+  header .header-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    /*-- Navbar - Starts --*/
+    /*-- Navbar - Ends --*/ }
+    header .header-wrapper nav {
+      height: 3.25em;
+      transition: 500ms ease;
+      border: 0 !important;
+      /*-- Logo Placement - Starts --*/
+      /*-- Logo Placement - Ends --*/
+      /*-- Main Menu - Starts --*/
+      /*-- Main Menu - Ends --*/ }
+      header .header-wrapper nav .logo {
+        float: left;
+        font-weight: bold;
+        font-size: 2em;
+        line-height: 1.25em;
+        padding: 0.5em 1em;
+        /*-- Logo Size - Starts --*/
+        /*-- Logo Size - Ends --*/ }
+        header .header-wrapper nav .logo a img {
+          height: 1.25em;
+          position: relative; }
+      header .header-wrapper nav .navbar-nav {
+        float: right;
+        position: relative;
+        padding: 0.5em 1em;
+        /*-- Menu Item Placement - Starts --*/
+        /*-- Menu Item Placement - Ends --*/ }
+        header .header-wrapper nav .navbar-nav li {
+          float: left;
+          display: inline;
+          padding: 0 1.25em 0 1.25em;
+          /*-- Menu Element Behaviour - Starts --*/
+          /*-- Menu Element Behaviour - Starts --*/ }
+          header .header-wrapper nav .navbar-nav li a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 1em; }
+            header .header-wrapper nav .navbar-nav li a:hover {
+              color: #ffffff;
+              font-weight: bold;
+              transition: all 0.5s; }
+            header .header-wrapper nav .navbar-nav li a:active {
+              color: #ffffff;
+              font-weight: bold;
+              transition: all 0.5s; }
 
-.header-wrapper {
-  width: 85%;
-  height: 3.125em;
-  float: centre; }
-
-.navbar-nav {
-  float: right;
-  position: relative;
-  bottom: 1.25em; }
-
-.collapsed {
-  border: none;
-  position: relative;
-  bottom: 1.25em; }
-
-.navbar-default {
-  transition: 500ms ease;
-  border: 0 !important; }
-  .navbar-default .scrolled {
-    box-shadow: 0px 10px 55px -16px rgba(59, 59, 59, 0.66); }
-
-/*---END---*/
-/*NAV --- General*/
-/*HEADER END*/
-/*--ABOVE THE FOLD--*/
+/*-- HEADER - END --*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--ABOVE THE FOLD - Starts --*/
 .atf-wrapper {
-  margin-bottom: 12em;
+  width: 100%;
+  margin-bottom: 2em;
   text-align: left;
   position: relative;
-  top: 3em;
+  padding-top: 3em;
+  padding-bottom: 3em;
   overflow: auto;
-  /*-- Background Gradient --*/
+  /*-- Background Gradient - Starts --*/
   background: #f5f8fa;
-  background: -moz-linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 46%, #54939e 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, #f5f8fa), color-stop(46%, #f5f8fa), color-stop(100%, #54939e));
-  background: -webkit-linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 46%, #54939e 100%);
-  background: -o-linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 46%, #54939e 100%);
-  background: -ms-linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 46%, #54939e 100%);
-  background: linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 46%, #54939e 100%);
+  background: -moz-linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 34%, #54939e 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #f5f8fa), color-stop(34%, #f5f8fa), color-stop(100%, #54939e));
+  background: -webkit-linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 34%, #54939e 100%);
+  background: -o-linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 34%, #54939e 100%);
+  background: -ms-linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 34%, #54939e 100%);
+  background: linear-gradient(45deg, #f5f8fa 0%, #f5f8fa 34%, #54939e 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f8fa', endColorstr='#54939e', GradientType=1 );
-  /*-- Inner Text --*/ }
-  .atf-wrapper p {
-    font-family: "Maitree", serif;
-    font-weight: 600;
-    color: #5b5b5b;
-    font-size: 1em;
-    line-height: 1.25em;
-    margin: 1em 0;
-    width: 55%; }
-  .atf-wrapper .btn-wrapper {
-    margin-top: 2em;
-    float: left;
-    height: 2em; }
+  /*-- Background Gradient - Ends --*/
+  /*-- Left Grid - Starts --*/
+  /*-- Left Grid - Ends --*/
+  /*-- Right Grid - Starts --*/
+  /*-- Right Grid - Ends --*/
+  /*-- Counter Section - Starts --*/
+  /*-- Counter Section - Ends --*/ }
+  .atf-wrapper .atf-text-grid {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-right: 6.5em;
+    padding-left: 2em;
+    /*-- Inner Text - Starts --*/
+    /*-- Inner Text - Ends --*/
+    /*-- Apply Now Button Wrapper - Starts --*/
+    /*-- Apply Now Button Wrapper - Ends --*/ }
+    .atf-wrapper .atf-text-grid p {
+      font-family: "Maitree", serif;
+      font-weight: 600;
+      color: #5b5b5b;
+      font-size: 1em;
+      line-height: 1.25em;
+      margin: 1em 0; }
+    .atf-wrapper .atf-text-grid .btn-wrapper {
+      margin-top: 2em;
+      float: left;
+      height: 2em; }
+  .atf-wrapper .atf-img-wrapper {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    text-align: right;
+    align-self: center;
+    /*-- Illustration Size - Starts --*/
+    /*-- Illustration Size - Ends --*/ }
+    .atf-wrapper .atf-img-wrapper .atf-img {
+      margin-top: 5em;
+      height: 28em; }
+  .atf-wrapper .counter-wrapper {
+    /*-- Icons Placement - Starts --*/
+    /*-- Icons Placement - Ends --*/
+    /*-- Counter Text Behaviour - Starts --*/
+    /*-- Counter Text Behaviour - Ends --*/
+    /*-- The Counter Behaviour - Starts --*/
+    /*-- The Counter Behaviour - Ends --*/ }
+    .atf-wrapper .counter-wrapper .icon-wrapper {
+      margin: 0;
+      padding: 0;
+      /*-- Icon Dimensions - Starts --*/
+      /*-- Icon Dimensions - Ends --*/ }
+      .atf-wrapper .counter-wrapper .icon-wrapper .counter-icons {
+        height: 8em; }
+    .atf-wrapper .counter-wrapper .counter-text-wrapper {
+      font-family: "Comfortaa", cursive;
+      colour: #ebebeb;
+      font-weight: bold;
+      text-align: center;
+      /*-- The Main Text - Starts --*/
+      /*-- The Main Text - Ends --*/
+      /*-- The Sub Text - Starts --*/
+      /*-- The Sub Text - Ends --*/ }
+      .atf-wrapper .counter-wrapper .counter-text-wrapper .counter-text-regular {
+        font-size: 1.2em;
+        margin: 0.75em 0 0 0;
+        padding: 0;
+        line-height: 1.2em; }
+      .atf-wrapper .counter-wrapper .counter-text-wrapper .counter-text-italics {
+        font-size: 1em;
+        font-style: italic;
+        margin: 0;
+        padding: 0; }
+    .atf-wrapper .counter-wrapper .the-counter {
+      margin-top: 0em;
+      font-family: "Maitree", serif;
+      font-size: 2.1em;
+      font-style: italic;
+      color: #94bf1f;
+      text-align: center;
+      font-weight: bold; }
+
+/*--ABOVE THE FOLD - Ends --*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-- HOW IT WORKS - Starts --*/
+/*-- HOW IT WORKS - Ends --*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/

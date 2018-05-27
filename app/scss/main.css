@@ -347,7 +347,8 @@ mark {
     font-weight: bold;
     font-family: "Maitree", serif;
     color: #54939e;
-    font-size: 1em; }
+    font-size: 1em;
+    font-style: italic; }
     .faq-wrapper .link-text a {
       text-decoration: none; }
 

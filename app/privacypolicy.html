@@ -33,9 +33,8 @@
         <!--StyleSheets Ends-->
         
         <!--JavaScript Starts-->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/header.js"></script>
-        <script src="js/footer.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
         <!--JavaScript Ends-->
 
     </head>
@@ -44,7 +43,23 @@
 
         <!--Header Starts-->
         <header>
-            <div common-header="header.html"></div>
+            <div class="header-wrapper">
+                <nav>
+                    <div class="logo">
+                        <a href="index.html"><img alt="MoneyMate" src="images/MoneyMateLogo.png"/></a>
+                    </div>
+
+                    <div class="navbar-nav" id="main-menu">
+                        <ul>
+                            <li><a href="howitworks.html#money_mate_calculator" class="btn btn-red">APPLY NOW</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="howitworks.html">How It Works</a></li>
+                            <li><a href="faq.html">FAQs</a></li>
+                            <li><a href="#">Log In</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </header>
         <!--Header Ends-->
 
@@ -61,10 +76,7 @@
         <!--Footer Ends-->
 
         <!--JavaScript Starts-->
-        <script>
-            includeHeader(); //Includes the Header design
-            includeFooter(); //Includes the Footer design
-        </script>
+
         <!--JavaScript Ends-->
 
     </body>

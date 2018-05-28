@@ -99,6 +99,111 @@ mark {
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+/*-- HEADER - START --*/
+
+header{
+    font-family: $header-font;
+    width: 100%;
+    height: 3.25em;
+	background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000000;
+    font-size: 1em;
+
+	/*-- Header Container - Starts --*/
+	
+	.header-wrapper{
+		width: $primary-wrapper;		
+		margin: 0 auto;
+		overflow: hidden;
+
+		/*-- Navbar - Starts --*/
+
+		nav{
+			height: 3.25em;
+			transition:500ms ease;
+			border: 0!important;
+
+			/*-- Logo Placement - Starts --*/
+			
+			.logo{
+				float: left;
+				font-weight:bold;
+				font-size: 2em;
+				line-height: 1.25em;
+				padding: 0.5em 1em;
+
+				/*-- Logo Size - Starts --*/
+
+				a{
+					img{
+						height:1.25em;
+						position: relative;
+					}
+				}
+				/*-- Logo Size - Ends --*/
+
+			}
+			/*-- Logo Placement - Ends --*/
+
+			/*-- Main Menu - Starts --*/
+
+			.navbar-nav{
+				float: right;
+				position: relative;
+				padding: 0.5em 1em;
+
+				/*-- Menu Item Placement - Starts --*/
+
+				li{
+					float: left;
+					display: inline;
+					padding: 0 1.25em 0 1.25em;
+
+					/*-- Menu Element Behaviour - Starts --*/
+
+					a{
+						color: $regularmenu-color;
+						text-decoration: none;
+						text-transform: capitalize;
+						font-size: 1em;
+
+						//On Hover
+						&:hover{
+							color: $hovermenu-color;
+							font-weight: bolder;
+							transition: all 0.5s;
+						}
+
+						//On Active
+						&:active{
+							color: $activemenu-color;
+							font-weight: bold;
+							transition: all 0.5s;
+						}
+					}
+					/*-- Menu Element Behaviour - Starts --*/
+
+				}
+				/*-- Menu Item Placement - Ends --*/
+
+			}
+			/*-- Main Menu - Ends --*/
+
+		}
+		/*-- Navbar - Ends --*/
+
+	}
+	/*-- Header Container - Ends --*/
+
+}
+/*-- HEADER - END --*/
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 /*--ABOVE THE FOLD - Starts --*/
 
 .atf-wrapper{
@@ -149,7 +254,7 @@ mark {
 
 		.atf-text{
 			font-family: $body-font;
-			font-weight: 600;
+			//font-weight: 600;
 			color: $header-color;
 			font-size: 1em;
 			line-height: 1.25em;
@@ -243,8 +348,7 @@ mark {
 			margin-top: 0em;
 			font-family: $body-font;
 			font-size: 2.1em;
-			font-style: italic;
-			color: $applynow-green;
+			color: black;
 			text-align: center;
 			font-weight: bold;
 		}
@@ -267,6 +371,7 @@ mark {
 	text-align:center;
 	background-color: #fafafa;
 	overflow: hidden;
+	margin-bottom: 1em;
 
 
 	/*-- Grid Layout - Starts --*/
@@ -296,11 +401,13 @@ mark {
 		}
 
 		.links{
-			color: $subheader-color;
-			font-style: italic;
-			font-weight: bold;
+			color: $header-color;
 			font-size: 1em;
-			text-decoration: none;
+			text-decoration: underline;
+
+			&:hover{
+				color: $subheader-color;
+			}
 		}
 
 		.down-arrow{
@@ -322,7 +429,7 @@ mark {
 	width:100%;
 	font-family: $body-font;
 	text-align:center;
-	background-color: #e0e0e0;
+	background-color: #f4f6f6;
 	padding-top:0.5em;
 	overflow: hidden;
 }
@@ -483,14 +590,15 @@ mark {
 	.link-text{
 		text-align: right;
 		margin-right: 3em;
-		font-weight: bold;
-		font-family: $body-font;
-		color: $subheader-color;
-		font-size: 1em;
-		font-style: italic;
 
 		a{
-			text-decoration: none;
+			color: $header-color;
+			font-size: 1em;
+			text-decoration: underline;
+
+			&:hover{
+				color: $subheader-color;
+			}
 		}
 	}
 }

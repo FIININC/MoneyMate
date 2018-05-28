@@ -1,6 +1,6 @@
 /*-- Declaring the Import SCSS Files --*/
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
-@import url("https://fonts.googleapis.com/css?family=Maitree");
+@import url("https://fonts.googleapis.com/css?family=Numans");
 .article-container {
   width: 100%;
   margin-bottom: 2em;
@@ -18,7 +18,7 @@
     grid-template-columns: repeat(2, 50%); }
   .article-container .grid-item {
     text-align: left;
-    font-family: "Maitree", serif;
+    font-family: "Numans", serif;
     color: #5b5b5b;
     font-size: 1em;
     padding-right: 3em; }
@@ -27,7 +27,7 @@
 
 /*-- Declaring the Import SCSS Files --*/
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
-@import url("https://fonts.googleapis.com/css?family=Maitree");
+@import url("https://fonts.googleapis.com/css?family=Numans");
 .article-container {
   width: 100%;
   height: 100%;
@@ -42,7 +42,7 @@
 
 /*-- Declaring the Import SCSS Files --*/
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
-@import url("https://fonts.googleapis.com/css?family=Maitree");
+@import url("https://fonts.googleapis.com/css?family=Numans");
 .article-container {
   width: 100%;
   height: 100%;
@@ -57,7 +57,7 @@
 
 /*-- Declaring the Import SCSS Files --*/
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
-@import url("https://fonts.googleapis.com/css?family=Maitree");
+@import url("https://fonts.googleapis.com/css?family=Numans");
 .article-container {
   width: 100%;
   margin-bottom: 2em;
@@ -75,7 +75,7 @@
     grid-template-columns: 60% 40%; }
   .article-container .grid-item {
     text-align: left;
-    font-family: "Maitree", serif;
+    font-family: "Numans", serif;
     color: #5b5b5b;
     font-size: 1em;
     padding-right: 3em; }
@@ -85,7 +85,7 @@
 
 /*-- Declaring the Import SCSS Files --*/
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
-@import url("https://fonts.googleapis.com/css?family=Maitree");
+@import url("https://fonts.googleapis.com/css?family=Numans");
 footer {
   font-family: "Comfortaa", cursive;
   width: 100%;
@@ -133,78 +133,11 @@ footer {
 
 /*-- Declaring the Import SCSS Files --*/
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
-@import url("https://fonts.googleapis.com/css?family=Maitree");
-/*-- HEADER - START --*/
-header {
-  font-family: "Comfortaa", cursive;
-  width: 100%;
-  height: 3.25em;
-  background: transparent;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  font-size: 1em;
-  overflow: hidden;
-  /*-- Header Container - Starts --*/
-  /*-- Header Container - Ends --*/ }
-  header .header-wrapper {
-    width: 90%;
-    margin: 0 auto;
-    /*-- Navbar - Starts --*/
-    /*-- Navbar - Ends --*/ }
-    header .header-wrapper nav {
-      height: 3.25em;
-      transition: 500ms ease;
-      border: 0 !important;
-      /*-- Logo Placement - Starts --*/
-      /*-- Logo Placement - Ends --*/
-      /*-- Main Menu - Starts --*/
-      /*-- Main Menu - Ends --*/ }
-      header .header-wrapper nav .logo {
-        float: left;
-        font-weight: bold;
-        font-size: 2em;
-        line-height: 1.25em;
-        padding: 0.5em 1em;
-        /*-- Logo Size - Starts --*/
-        /*-- Logo Size - Ends --*/ }
-        header .header-wrapper nav .logo a img {
-          height: 1.25em;
-          position: relative; }
-      header .header-wrapper nav .navbar-nav {
-        float: right;
-        position: relative;
-        padding: 0.5em 1em;
-        /*-- Menu Item Placement - Starts --*/
-        /*-- Menu Item Placement - Ends --*/ }
-        header .header-wrapper nav .navbar-nav li {
-          float: left;
-          display: inline;
-          padding: 0 1.25em 0 1.25em;
-          /*-- Menu Element Behaviour - Starts --*/
-          /*-- Menu Element Behaviour - Starts --*/ }
-          header .header-wrapper nav .navbar-nav li a {
-            color: #ffffff;
-            text-decoration: none;
-            text-transform: capitalize;
-            font-size: 1em; }
-            header .header-wrapper nav .navbar-nav li a:hover {
-              color: #ffffff;
-              font-weight: bolder;
-              transition: all 0.5s; }
-            header .header-wrapper nav .navbar-nav li a:active {
-              color: #ffffff;
-              font-weight: bold;
-              transition: all 0.5s; }
-
-/*-- HEADER - END --*/
-/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Numans");
 
 /*-- Declaring the Import SCSS Files --*/
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
-@import url("https://fonts.googleapis.com/css?family=Maitree");
+@import url("https://fonts.googleapis.com/css?family=Numans");
 .article-container {
   width: 100%;
   height: 100%;
@@ -219,7 +152,7 @@ header {
 
 /*-- Declaring the Import SCSS Files --*/
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
-@import url("https://fonts.googleapis.com/css?family=Maitree");
+@import url("https://fonts.googleapis.com/css?family=Numans");
 .article-container {
   width: 100%;
   height: 100%;
@@ -234,7 +167,7 @@ header {
 
 /*-- Declaring the Import SCSS Files --*/
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
-@import url("https://fonts.googleapis.com/css?family=Maitree");
+@import url("https://fonts.googleapis.com/css?family=Numans");
 .article-container {
   width: 100%;
   height: 100%;
@@ -249,7 +182,7 @@ header {
 
 /*-- Declaring the Import SCSS Files --*/
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
-@import url("https://fonts.googleapis.com/css?family=Maitree");
+@import url("https://fonts.googleapis.com/css?family=Numans");
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-- General - Start --*/
 html, body {
@@ -324,6 +257,73 @@ mark {
     background: #811c1e; }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-- HEADER - START --*/
+header {
+  font-family: "Comfortaa", cursive;
+  width: 100%;
+  height: 3.25em;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000000;
+  font-size: 1em;
+  /*-- Header Container - Starts --*/
+  /*-- Header Container - Ends --*/ }
+  header .header-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    /*-- Navbar - Starts --*/
+    /*-- Navbar - Ends --*/ }
+    header .header-wrapper nav {
+      height: 3.25em;
+      transition: 500ms ease;
+      border: 0 !important;
+      /*-- Logo Placement - Starts --*/
+      /*-- Logo Placement - Ends --*/
+      /*-- Main Menu - Starts --*/
+      /*-- Main Menu - Ends --*/ }
+      header .header-wrapper nav .logo {
+        float: left;
+        font-weight: bold;
+        font-size: 2em;
+        line-height: 1.25em;
+        padding: 0.5em 1em;
+        /*-- Logo Size - Starts --*/
+        /*-- Logo Size - Ends --*/ }
+        header .header-wrapper nav .logo a img {
+          height: 1.25em;
+          position: relative; }
+      header .header-wrapper nav .navbar-nav {
+        float: right;
+        position: relative;
+        padding: 0.5em 1em;
+        /*-- Menu Item Placement - Starts --*/
+        /*-- Menu Item Placement - Ends --*/ }
+        header .header-wrapper nav .navbar-nav li {
+          float: left;
+          display: inline;
+          padding: 0 1.25em 0 1.25em;
+          /*-- Menu Element Behaviour - Starts --*/
+          /*-- Menu Element Behaviour - Starts --*/ }
+          header .header-wrapper nav .navbar-nav li a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 1em; }
+            header .header-wrapper nav .navbar-nav li a:hover {
+              color: #ffffff;
+              font-weight: bolder;
+              transition: all 0.5s; }
+            header .header-wrapper nav .navbar-nav li a:active {
+              color: #ffffff;
+              font-weight: bold;
+              transition: all 0.5s; }
+
+/*-- HEADER - END --*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*--ABOVE THE FOLD - Starts --*/
 .atf-wrapper {
   width: 100%;
@@ -367,8 +367,7 @@ mark {
     /*-- Apply Now Button Wrapper - Starts --*/
     /*-- Apply Now Button Wrapper - Ends --*/ }
     .atf-wrapper .atf-text-grid .atf-text {
-      font-family: "Maitree", serif;
-      font-weight: 600;
+      font-family: "Numans", serif;
       color: #5b5b5b;
       font-size: 1em;
       line-height: 1.25em;
@@ -422,10 +421,9 @@ mark {
         padding: 0; }
     .atf-wrapper .counter-wrapper .the-counter {
       margin-top: 0em;
-      font-family: "Maitree", serif;
+      font-family: "Numans", serif;
       font-size: 2.1em;
-      font-style: italic;
-      color: #94bf1f;
+      color: black;
       text-align: center;
       font-weight: bold; }
 
@@ -435,10 +433,11 @@ mark {
 .hiw-wrapper {
   height: 100%;
   width: 100%;
-  font-family: "Maitree", serif;
+  font-family: "Numans", serif;
   text-align: center;
   background-color: #fafafa;
   overflow: hidden;
+  margin-bottom: 1em;
   /*-- Grid Layout - Starts --*/
   /*-- Grid Layout - Ends --*/ }
   .hiw-wrapper .grid-container {
@@ -459,11 +458,11 @@ mark {
       padding: 0;
       font-size: 1.25em; }
     .hiw-wrapper .grid-item .links {
-      color: #54939e;
-      font-style: italic;
-      font-weight: bold;
+      color: #5b5b5b;
       font-size: 1em;
-      text-decoration: none; }
+      text-decoration: underline; }
+      .hiw-wrapper .grid-item .links:hover {
+        color: #54939e; }
     .hiw-wrapper .grid-item .down-arrow {
       height: 2em; }
 
@@ -473,9 +472,9 @@ mark {
 .mmc-wrapper {
   height: 100vh;
   width: 100%;
-  font-family: "Maitree", serif;
+  font-family: "Numans", serif;
   text-align: center;
-  background-color: #e0e0e0;
+  background-color: #f4f6f6;
   padding-top: 0.5em;
   overflow: hidden; }
 
@@ -485,7 +484,7 @@ mark {
 .wu-wrapper {
   height: 100%;
   width: 100%;
-  font-family: "Maitree", serif;
+  font-family: "Numans", serif;
   text-align: center;
   background-color: #fafafa;
   overflow: hidden;
@@ -563,7 +562,7 @@ mark {
 /*-- FAQs - Starts --*/
 .faq-wrapper {
   width: 100%;
-  font-family: "Maitree", serif;
+  font-family: "Numans", serif;
   text-align: center;
   background-color: #fafafa;
   margin-bottom: 8em;
@@ -592,14 +591,13 @@ mark {
       grid-column-end: 3; }
   .faq-wrapper .link-text {
     text-align: right;
-    margin-right: 3em;
-    font-weight: bold;
-    font-family: "Maitree", serif;
-    color: #54939e;
-    font-size: 1em;
-    font-style: italic; }
+    margin-right: 3em; }
     .faq-wrapper .link-text a {
-      text-decoration: none; }
+      color: #5b5b5b;
+      font-size: 1em;
+      text-decoration: underline; }
+      .faq-wrapper .link-text a:hover {
+        color: #54939e; }
 
 /*-- FAQs - Ends --*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -607,7 +605,7 @@ mark {
 .ttm-wrapper {
   height: 100%;
   width: 100%;
-  font-family: "Maitree", serif;
+  font-family: "Numans", serif;
   text-align: center;
   background-color: #fafafa;
   margin-bottom: 8em;
@@ -615,7 +613,7 @@ mark {
   .ttm-wrapper .quote-text {
     margin-top: 5em;
     margin-bottom: 0em;
-    font-family: "Maitree", serif;
+    font-family: "Numans", serif;
     font-size: 1em;
     font-style: italic; }
 
@@ -624,7 +622,7 @@ mark {
 
 /*-- Declaring the Import SCSS Files --*/
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
-@import url("https://fonts.googleapis.com/css?family=Maitree");
+@import url("https://fonts.googleapis.com/css?family=Numans");
 .article-container {
   width: 100%;
   height: 100%;
@@ -639,7 +637,7 @@ mark {
 
 /*-- Declaring the Import SCSS Files --*/
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
-@import url("https://fonts.googleapis.com/css?family=Maitree");
+@import url("https://fonts.googleapis.com/css?family=Numans");
 .article-container {
   width: 100%;
   height: 100%;
@@ -653,4 +651,4 @@ mark {
     width: 90%; }
 
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
-@import url("https://fonts.googleapis.com/css?family=Maitree");
+@import url("https://fonts.googleapis.com/css?family=Numans");

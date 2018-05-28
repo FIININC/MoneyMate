@@ -1,6 +1,6 @@
 ﻿/*-- Declaring the Import SCSS Files --*/
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
-@import url("https://fonts.googleapis.com/css?family=Maitree");
+@import url("https://fonts.googleapis.com/css?family=Numans");
 .article-container {
   width: 100%;
   margin-bottom: 2em;
@@ -18,7 +18,7 @@
     grid-template-columns: repeat(2, 50%); }
   .article-container .grid-item {
     text-align: left;
-    font-family: "Maitree", serif;
+    font-family: "Numans", serif;
     color: #5b5b5b;
     font-size: 1em;
     padding-right: 3em; }

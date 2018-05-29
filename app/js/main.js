@@ -23,6 +23,24 @@ $(document).ready(function(){
     //Window Scrolling
     win.scroll(function(event) {
 
+        /*Fade in animations for the steps on landing page*/
+        //Step 1
+        $(document).ready(function () {
+            $('div.step1hidden').fadeIn(3000).removeClass('step1hidden');
+        });
+        //Step 2
+        $(document).ready(function () {
+            $('div.step2hidden').fadeIn(6000).removeClass('step2hidden');
+        });
+        //Step 3
+        $(document).ready(function () {
+            $('div.step3hidden').fadeIn(9000).removeClass('step3hidden');
+        });
+        //Step 4
+        $(document).ready(function () {
+            $('div.step4hidden').fadeIn(12000).removeClass('step4hidden');
+        });
+
         //nav shadow and opacity change on scroll
         $('header').toggleClass('scrolled', $(this).scrollTop() > 50);
 
@@ -40,7 +58,7 @@ $(document).ready(function(){
             }
         });
     });
-    
+
     includeFooter(); //Includes the Footer design
 
     //Include the Footer HTML to all the Pages

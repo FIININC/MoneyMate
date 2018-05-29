@@ -256,6 +256,7 @@ header {
   background-color: #fafafa;
   overflow: hidden;
   margin-bottom: 1em;
+  transition: all 5s;
   /*-- Grid Layout - Starts --*/
   /*-- Grid Layout - Ends --*/ }
   .hiw-wrapper .grid-container {
@@ -283,6 +284,14 @@ header {
         color: #54939e; }
     .hiw-wrapper .grid-item .down-arrow {
       height: 2em; }
+  .hiw-wrapper .step1hidden {
+    display: none; }
+  .hiw-wrapper .step2hidden {
+    display: none; }
+  .hiw-wrapper .step3hidden {
+    display: none; }
+  .hiw-wrapper .step4hidden {
+    display: none; }
 
 /*-- HOW IT WORKS - Ends --*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/

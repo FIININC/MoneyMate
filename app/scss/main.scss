@@ -35,6 +35,16 @@ h2{
 	margin-bottom: 0.625em;
 }
 
+
+h3{
+	font-family: $header-font;
+	font-weight: bold;
+	color: $title-color;
+	font-size: 1.5em;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+}
+
 mark {
 	background-color: $mark-color;
 	display: inline-block;

@@ -43,11 +43,10 @@
 			.steps{
 				font-family: $body-font;
 				font-size: 1em;
-				text-align: left;
 				color: $header-color;
 				line-height: 1.2em;
-				padding-right: 3em;
-				text-align: left;
+				padding-right: 7em;
+				text-align: justify;
 			}
 		}
 	}
@@ -86,11 +85,10 @@
 			.steps{
 				font-family: $body-font;
 				font-size: 1em;
-				text-align: left;
 				color: $header-color;
 				line-height: 1.2em;
-				padding-left: 3em;
-				text-align: right;
+				padding-left: 7em;
+				text-align: justify;
 			}
 		}
 

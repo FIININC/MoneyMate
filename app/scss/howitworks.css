@@ -33,11 +33,10 @@
       .hiw-article-container .article-wrapper-odd .grid-item .steps {
         font-family: "Numans", serif;
         font-size: 1em;
-        text-align: left;
         color: #5b5b5b;
         line-height: 1.2em;
-        padding-right: 3em;
-        text-align: left; }
+        padding-right: 7em;
+        text-align: justify; }
   .hiw-article-container .article-wrapper-even {
     background-color: #fafafa;
     height: 100%;
@@ -63,8 +62,7 @@
       .hiw-article-container .article-wrapper-even .grid-item .steps {
         font-family: "Numans", serif;
         font-size: 1em;
-        text-align: left;
         color: #5b5b5b;
         line-height: 1.2em;
-        padding-left: 3em;
-        text-align: right; }
+        padding-left: 7em;
+        text-align: justify; }

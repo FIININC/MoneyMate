@@ -153,7 +153,6 @@ header {
 /*--ABOVE THE FOLD - Starts --*/
 .atf-wrapper {
   width: 100%;
-  margin-bottom: 2em;
   text-align: left;
   position: relative;
   padding-top: 3em;
@@ -283,7 +282,8 @@ header {
     .hiw-wrapper .grid-item .step-text {
       margin: 0;
       padding: 0;
-      font-size: 1.25em; }
+      font-size: 1.25em;
+      text-align: center; }
     .hiw-wrapper .grid-item .links {
       color: #5b5b5b;
       font-size: 1em;
@@ -323,7 +323,7 @@ header {
   text-align: center;
   background-color: #fafafa;
   overflow: hidden;
-  margin-bottom: 8em; }
+  margin-bottom: 1em; }
   .wu-wrapper .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 8.33%);
@@ -400,7 +400,7 @@ header {
   font-family: "Numans", serif;
   text-align: center;
   background-color: #fafafa;
-  margin-bottom: 8em;
+  margin-bottom: 1em;
   overflow: hidden; }
   .faq-wrapper .grid-container {
     display: grid;

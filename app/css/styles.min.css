@@ -116,6 +116,7 @@ footer {
     text-decoration: none;
     color: white; }
   footer .disclosures-text {
+    padding: 1em 0em;
     text-align: left;
     font-weight: bold;
     font-size: 1em;
@@ -128,10 +129,20 @@ footer {
       padding: 0.3em;
       font-size: 0.7em;
       font-weight: 300;
-      text-align: justify; }
+      text-align: justify;
+      line-height: 1.5em; }
   footer .social-icons {
     height: 1em;
     margin-right: 1em; }
+  footer .copyright-text {
+    font-size: 0.7em;
+    font-weight: 300; }
+    footer .copyright-text a {
+      text-decoration: none;
+      color: white; }
+      footer .copyright-text a:hover {
+        color: #004d4d;
+        text-decoration: underline; }
 
 /*-- Declaring the Import SCSS Files --*/
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
@@ -172,11 +183,10 @@ footer {
       .hiw-article-container .article-wrapper-odd .grid-item .steps {
         font-family: "Numans", serif;
         font-size: 1em;
-        text-align: left;
         color: #5b5b5b;
         line-height: 1.2em;
-        padding-right: 3em;
-        text-align: left; }
+        padding-right: 7em;
+        text-align: justify; }
   .hiw-article-container .article-wrapper-even {
     background-color: #fafafa;
     height: 100%;
@@ -202,11 +212,10 @@ footer {
       .hiw-article-container .article-wrapper-even .grid-item .steps {
         font-family: "Numans", serif;
         font-size: 1em;
-        text-align: left;
         color: #5b5b5b;
         line-height: 1.2em;
-        padding-left: 3em;
-        text-align: right; }
+        padding-left: 7em;
+        text-align: justify; }
 
 /*-- Declaring the Import SCSS Files --*/
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
@@ -400,7 +409,6 @@ header {
 /*--ABOVE THE FOLD - Starts --*/
 .atf-wrapper {
   width: 100%;
-  margin-bottom: 2em;
   text-align: left;
   position: relative;
   padding-top: 3em;
@@ -530,7 +538,8 @@ header {
     .hiw-wrapper .grid-item .step-text {
       margin: 0;
       padding: 0;
-      font-size: 1.25em; }
+      font-size: 1.25em;
+      text-align: center; }
     .hiw-wrapper .grid-item .links {
       color: #5b5b5b;
       font-size: 1em;
@@ -570,7 +579,7 @@ header {
   text-align: center;
   background-color: #fafafa;
   overflow: hidden;
-  margin-bottom: 8em; }
+  margin-bottom: 1em; }
   .wu-wrapper .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 8.33%);
@@ -647,7 +656,7 @@ header {
   font-family: "Numans", serif;
   text-align: center;
   background-color: #fafafa;
-  margin-bottom: 8em;
+  margin-bottom: 1em;
   overflow: hidden; }
   .faq-wrapper .grid-container {
     display: grid;

@@ -89,4 +89,36 @@ $(document).ready(function(){
             }
         }
     }
+    
+    //Testimonials Animation
+    var requestURL = '../Data/Testimonials.json';
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+
+    request.onload = function() {
+        var ttmns = request.response;
+        showttmns(ttmns);
+    }
+
+    function showttmns(jsonObj)
+    {
+        var ttmCol = jsonObj['ttmData'];
+        var ttmClass = document.getElementById("ttm")
+
+        for (count = 0; count < ttmCol.length; count++)
+        {
+            var currQuote = document.createElement('p');
+            var currAuthor = document.createElement('p');
+
+            currQuote.textContent = ttmCol[count].quote;
+            currAuthor.textContent = "- " + ttmCol[count].author;
+           
+            ttmClass.appendChild(currQuote);
+            ttmClass.appendChild(currAuthor)
+        }
+
+    }
+
 });

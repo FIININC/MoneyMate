@@ -1,7 +1,7 @@
 /*-- Declaring the Import SCSS Files --*/ 
 @import 'variables.scss'; //Importing the files containing all the variables
 
-.article-container{
+.about-article-container{
 	width:100%;
 	margin-bottom: 2em;
 	text-align: left;
@@ -11,7 +11,7 @@
 
 	.article-wrapper{
 		width:$primary-wrapper;
-		height:100%;
+		//height:100%;
 		margin-top: 2em;
 		padding: 0em 5em 0em 5em;
 	}
@@ -27,11 +27,13 @@
 		color: $header-color;
 		font-size: 1em;
 		padding-right: 3em;
+		align-self: center;
 
-		img{
-		  object-fit: cover;
-		  width: 100%;
-		  max-height: 100%;
+		.illustration-img{
+			object-fit: contain;
+			width: 100%;			
+			//max-height: 100%;
+			overflow: hidden;
 		}
 	}
 

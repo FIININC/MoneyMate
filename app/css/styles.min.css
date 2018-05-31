@@ -1,31 +1,31 @@
 /*-- Declaring the Import SCSS Files --*/
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
 @import url("https://fonts.googleapis.com/css?family=Numans");
-.article-container {
+.about-article-container {
   width: 100%;
   margin-bottom: 2em;
   text-align: left;
   position: relative;
   padding-top: 3em;
   padding-bottom: 3em; }
-  .article-container .article-wrapper {
+  .about-article-container .article-wrapper {
     width: 90%;
-    height: 100%;
     margin-top: 2em;
     padding: 0em 5em 0em 5em; }
-  .article-container .grid-container {
+  .about-article-container .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 50%); }
-  .article-container .grid-item {
+  .about-article-container .grid-item {
     text-align: left;
     font-family: "Numans", serif;
     color: #5b5b5b;
     font-size: 1em;
-    padding-right: 3em; }
-    .article-container .grid-item img {
-      object-fit: cover;
+    padding-right: 3em;
+    align-self: center; }
+    .about-article-container .grid-item .illustration-img {
+      object-fit: contain;
       width: 100%;
-      max-height: 100%; }
+      overflow: hidden; }
 
 /*-- Declaring the Import SCSS Files --*/
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
@@ -151,8 +151,7 @@ footer {
   .hiw-article-container .article-wrapper-odd {
     background-color: #edf4f5;
     height: 100%;
-    margin: 0 auto;
-    margin-top: 2em;
+    margin: 2em auto;
     padding: 1em 5em 1em 5em;
     text-align: left; }
     .hiw-article-container .article-wrapper-odd .grid-container {
@@ -699,7 +698,7 @@ header {
 /*-- Declaring the Import SCSS Files --*/
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
 @import url("https://fonts.googleapis.com/css?family=Numans");
-.article-container {
+.privacy-article-container {
   width: 100%;
   height: 100%;
   margin-bottom: 2em;
@@ -708,8 +707,15 @@ header {
   padding-top: 3em;
   padding-bottom: 3em;
   overflow: auto; }
-  .article-container .article-wrapper {
-    width: 90%; }
+  .privacy-article-container .article-wrapper {
+    width: 90%;
+    height: 100%;
+    margin: 2em auto;
+    padding: 1em 5em 1em 5em;
+    text-align: justify;
+    font-family: "Numans", serif;
+    color: #5b5b5b;
+    font-size: 0.75em; }
 
 /*-- Declaring the Import SCSS Files --*/
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");

@@ -89,36 +89,62 @@ $(document).ready(function(){
             }
         }
     }
-    
-    //Testimonials Animation
-    var requestURL = '../Data/Testimonials.json';
-    var request = new XMLHttpRequest();
-    request.open('GET', requestURL);
-    request.responseType = 'json';
-    request.send();
 
-    request.onload = function() {
-        var ttmns = request.response;
-        showttmns(ttmns);
-    }
+    //Testimonials Animation
+    $.getJSON("js/Testimonials.json", function (json) {
+        showttmns(json);
+        console.log("JSON Data: " + json.ttmData[0].quote);
+    });
 
     function showttmns(jsonObj)
     {
         var ttmCol = jsonObj['ttmData'];
         var ttmClass = document.getElementById("ttm")
 
-        for (count = 0; count < ttmCol.length; count++)
-        {
+        for (count = 0; count < ttmCol.length; count++) {
+            var currContainer = document.createElement('div');
             var currQuote = document.createElement('p');
             var currAuthor = document.createElement('p');
 
+            currContainer.className = "quote";
+            currContainer.id = "qt" + count;
             currQuote.textContent = ttmCol[count].quote;
+            currQuote.className = "quote-text";
             currAuthor.textContent = "- " + ttmCol[count].author;
-           
-            ttmClass.appendChild(currQuote);
-            ttmClass.appendChild(currAuthor)
+
+            currContainer.appendChild(currQuote);
+            currContainer.appendChild(currAuthor);
+
+            ttmClass.appendChild(currContainer);
         }
 
+        loopQuotes();
+
     }
+
+    function loopQuotes() {
+        var quotes = $(".quote");
+        var quoteIndex = -1;
+
+        function showNextQuote() {
+            ++quoteIndex;
+            quotes
+              .eq(quoteIndex % quotes.length)
+              .fadeIn(1000)
+              .delay(2000)
+              .fadeOut(1000, showNextQuote);
+        }
+
+        showNextQuote();
+    }
+
+    $("body").addClass("is-blurred");
+
+    $(".toggleModal").on("click", function (event) {
+        event.preventDefault();
+
+        $(".modal").toggleClass("is-active");
+        $("body").toggleClass("is-blurred");
+    });
 
 });

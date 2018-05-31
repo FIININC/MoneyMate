@@ -59,6 +59,10 @@ mark {
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*-- General Wrapper - Start --*/
+.page-wrapper {
+	width: 100%;
+	//height: 100%;
+}
 
 .container-wrapper{
 	height: 100%;
@@ -493,6 +497,7 @@ header{
 		grid-column-end: 7;
 		grid-row-start: 1;
 		grid-row-end: 1;
+		padding-left: 1em;
 	}
 
 	.wu-icon-hright-top{
@@ -500,6 +505,7 @@ header{
 		grid-column-end: 9;
 		grid-row-start: 1;
 		grid-row-end: 1;
+		padding-right: 1em;
 	}
 
 	.wu-icon-hleft-bottom{
@@ -507,6 +513,7 @@ header{
 		grid-column-end: 7;
 		grid-row-start: 4;
 		grid-row-end: 4;
+		padding-left: 1em;
 	}
 
 	.wu-icon-hright-bottom{
@@ -514,34 +521,39 @@ header{
 		grid-column-end: 9;
 		grid-row-start: 4;
 		grid-row-end: 4;
+		padding-right: 1em;
 	}
 
 	.wu-icon-vleft-top{
-		grid-column-start: 3;
-		grid-column-end: 5;
+		grid-column-start: 4;
+		grid-column-end: 6;
 		grid-row-start: 2;
 		grid-row-end: 2;
+		padding-right: 1em;
 	}
 
 	.wu-icon-vleft-bottom{
-		grid-column-start: 3;
-		grid-column-end: 5;
+		grid-column-start: 4;
+		grid-column-end: 6;
 		grid-row-start: 3;
 		grid-row-end: 3;
+		padding-right: 1em;
 	}
 
 	.wu-icon-vright-top{
-		grid-column-start: 9;
-		grid-column-end: 11;
+		grid-column-start: 8;
+		grid-column-end: 10;
 		grid-row-start: 2;
 		grid-row-end: 2;
+		padding-left: 1em;
 	}
 
 	.wu-icon-vright-bottom{
-		grid-column-start: 9;
-		grid-column-end: 11;
+		grid-column-start: 8;
+		grid-column-end: 10;
 		grid-row-start: 3;
 		grid-row-end: 3;
+		padding-left: 1em;
 	}
 
 	.wu-illustration-center{
@@ -636,23 +648,128 @@ header{
 
 .ttm-wrapper{
 	height: 100%;
-	width:100%;
+	width: 100%;
 	font-family: $body-font;
-	text-align:center;
+	text-align: center;
 	background-color: #fafafa;
-	margin-bottom: 8em;
+	//margin-bottom: 3em;
 	overflow: hidden;
 
+	.inner-wrapper{
+		width: 50%;
+		min-height:20vh;
+		margin: 0 auto;
+		padding: 5em;
+	}
+
 	.quote-text{
-		margin-top: 5em;
-		margin-bottom: 0em;
+		//padding-top: 3em;
 		font-family: $body-font;
 		font-size: 1em;
 		font-style: italic;
 	}
+
+	.quote{
+		display: none;
+	}
+
 }
+
+.footer-svg-wrapper{
+	position: absolute;
+	width: 100%;
+
+	.footer-svg{
+		position: relative;
+		left: 0;
+		bottom: 30vh;
+		right: 0;
+		width: 100%;
+	}
+}
+
 /*-- TESTIMONIALS - Ends --*/
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+/*-- FOOTER - Starts --*/
 
+	footer{
+		font-family: $header-font;
+		width: 100%;
+		font-size: 1em;
+		padding: 3em;
+		color: white;
+		overflow-x: hidden;
+
+		background: #54939e;
+		background: -moz-linear-gradient(45deg, #54939e 0%, #49a5bf 53%, #93cede 100%);
+		background: -webkit-gradient(left bottom, right top, color-stop(0%, #54939e), color-stop(53%, #49a5bf), color-stop(100%, #93cede));
+		background: -webkit-linear-gradient(45deg, #54939e 0%, #49a5bf 53%, #93cede 100%);
+		background: -o-linear-gradient(45deg, #54939e 0%, #49a5bf 53%, #93cede 100%);
+		background: -ms-linear-gradient(45deg, #54939e 0%, #49a5bf 53%, #93cede 100%);
+		background: linear-gradient(45deg, #54939e 0%, #49a5bf 53%, #93cede 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54939e', endColorstr='#93cede', GradientType=1 );
+
+		.grid-container {
+			display: grid;
+			grid-template-columns: repeat(3, 33%);
+			margin-top: 2em;
+			grid-row-gap:1em; 
+		}
+
+		.grid-item {
+			padding: 1em 0em;
+			text-align: left;
+			font-weight: bold;
+		}
+
+		a{
+			text-decoration: none;
+			color: white;
+		}
+
+		.disclosures-text{
+			padding: 1em 0em;
+			text-align: left;
+			font-weight: bold;
+			font-size: 1em;
+			grid-column-start: 3;
+			grid-column-end: 4;
+			grid-row-start: 1;
+			grid-row-end: 5;
+
+			p{
+				margin-right:0.3em;
+				padding:0.3em;
+				font-size: 0.7em;
+				font-weight: 300;
+				text-align: justify;
+				line-height: 1.5em;
+			}
+		}
+
+		.social-icons{
+			height: 1em;
+			margin-right: 1em;
+		}
+
+		.copyright-text{
+			font-size: 0.7em;
+			font-weight: 300;
+
+			a{
+				text-decoration: none;
+				color: white;
+
+				&:hover{
+					color: #004d4d;
+					text-decoration: underline;
+				}
+
+			}
+
+		}
+	}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/

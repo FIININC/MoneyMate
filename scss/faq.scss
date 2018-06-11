@@ -1,0 +1,179 @@
+/*-- Declaring the Import SCSS Files --*/
+@import 'variables.scss'; //Importing the files containing all the variables
+
+.article-container{
+	width:100%;
+	margin-bottom: 2em;
+	text-align: left;
+	position: relative;
+	padding-top: 3em;
+	padding-bottom: 3em;
+
+
+	.grid-container {
+		display: grid;
+		grid-template-columns: 60% 40%;
+	}
+
+	.grid-item {
+		text-align: left;
+		font-family: $body-font;
+		color: $header-color;
+		font-size: 1em;
+		padding-right: 3em;
+
+		img{
+			width: 100%;
+			position: fixed;
+		}
+	}
+
+
+}
+@import url('https://fonts.googleapis.com/css?family=Oswald:300|Roboto:300,500');
+
+$spacing: 24px;
+$plus-size: 16px;
+$plus-thickness: 2px;
+$speed: 300ms;
+$easing: ease-in-out;
+$gray-dark: #546E7A;
+$gray: #CFD8DC;
+$gray-light: #ECEFF1;
+$primary: $applynow-green;
+
+
+h2{
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+}
+.module {
+	/*min-height: 200px;*/
+	position: relative;
+	top: 150px;
+}
+.module:nth-child(even) {
+	//margin-right: 0;
+}
+.come-in {
+	transform: translateY(-150px);
+	animation: come-in 1.5s ease forwards;
+}
+
+.come-in:nth-child(odd) {
+	animation-duration: 1.5s;
+}
+.details {
+	overflow: hidden;
+	border-bottom: 1px solid #54939e45;
+	transition: height $speed $easing;
+	width: 90%;
+	margin: 0 auto;
+	&-group{
+		position: relative;
+		bottom: 7em;
+	}
+	&:last-child {
+		border-bottom: 0;
+	}
+
+	&__summary,
+	&__content {
+		padding: $spacing;
+	}
+
+	&__summary {
+		position: relative;
+		list-style: none; // Hide the marker (proper method)
+		padding-left: $spacing*2;
+		outline: 0;
+		cursor: pointer;
+		transition: color $speed $easing;
+		font-family: $header-font;
+		font-size: 1.25em;
+		[open] > & {
+			color: $primary;
+		}
+
+		// Hide the marker in Webkit
+		&::-webkit-details-marker {
+			display: none;
+		}
+
+		// Our replacement marker
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+		}
+
+		&:before {
+			left: 21px;
+			top: 50%;
+			height: 4px;
+			margin-top: -1px;
+			width: 16px;
+			background: #94bf1f;
+			border-radius: 0.25em;
+		}
+
+		&:after {
+			left: 28px;
+			top: 51%;
+			height: 16px;
+			margin-top: -8px;
+			width: 4px;
+			margin-left: -1px;
+			background: #94bf1f;
+			transition: all 300ms ease-in-out;
+			border-radius: 0.25em;
+		}
+
+		[open] &:after {
+			opacity: 0;
+			transform: translateY(25%);
+		}
+	}
+
+	&__content {
+		padding-top: 0;
+		padding-left: $spacing*2;
+	}
+}
+
+
+
+
+
+
+
+.show-info .right-side-info {
+	margin-left: 50%;
+}
+
+.profile-photo {
+	animation: right_frame 1.5s ease-in-out 1 forwards;
+}
+
+@keyframes right_frame {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.details{
+
+}
+.faq-article-container{
+	position: relative;
+	top: 3em;
+	padding-bottom: 10em;
+
+}

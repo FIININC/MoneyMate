@@ -1,0 +1,507 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+
+        <title>MoneyMate</title>
+
+        <!--META SETS Starts-->
+
+        <!--META SETS Ends-->
+
+        <!-- FavIcon Starts -->
+        <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="images/favicon/manifest.json" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- FavIcon Starts -->
+        
+        <!--StyleSheets Starts-->
+        <link href="css/styles.min.css" rel="stylesheet" />
+        <!--StyleSheets Ends-->
+        
+        <!--JavaScript Starts-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+        <!--JavaScript Ends-->
+
+    </head>
+
+    <body onload="calculation()" class="home">
+
+        <!--Header Starts-->
+        <header class="home">
+            <input type="checkbox" id="xBxHack" />
+            <nav id="mainNav" class="mainNav">
+                <div class="container">
+                    <div class="logo"><a href="index.html"><img alt="MoneyMate" src="images/MoneyMateLogo.png"/></a>
+                    </div>
+                    <label class="navBars" for="xBxHack">
+                        <i class="fa fa-bars"></i>
+                    </label>
+                    <ul id="menu" class="menu">
+                        <li><a href="#money_mate_calculator" class="btn btn-red">APPLY NOW</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#how_it_works">How It Works</a></li>
+                        <li><a href="#why_us">Why Us</a></li>
+                        <li><a href="#faq">FAQs</a></li>
+                        <li><a href="https://borrowave.turnkey-lender.com/Lending#/">Log In</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!--Header Ends-->
+
+        <!-- SECTION: Above The Fold : Starts -->
+        <section id="above_the_fold" class="atf-wrapper">
+
+            <div class="curve-mask">
+                <div class="curve-up" id="curve-2">
+                    <section class="curve-content-wrap">
+                        <div class="curve-content">
+
+                            <div class="container-wrapper">
+                                <div class="grid-container">
+                                    <div class="atf-text-grid">
+                                        <h1>An Alternative to Payday Loans with a Savings Kicker!</h1>
+                                        <p class="atf-text">
+                                            Short on bills this month ? Need an emergency loan ?
+                                            <br />
+                                            Do you have bad credit ? And are you tired of using payday loans?
+                                            <br />
+                                            Then you’ve come to the right place for the friendliest cash loan you will ever get!
+                                        </p>
+                                        <p class="atf-text">
+                                            MoneyMate is a fast and friendly personal loan service that allows you to take care of your instant cash needs, while also helping you create a savings cushion so that you don’t find yourself applying for a payday loan ever again.
+                                        </p>
+                                        <div class="btn-wrapper">
+                                            <a href="#money_mate_calculator" class="btn btn-green">APPLY NOW</a>
+                                        </div>
+                                    </div>
+                                    <div class="atf-img-wrapper">
+                                        <img class="atf-img" src="images/atf-illustration.png" alt="MoneyMate Help Desk" />
+                                    </div>
+                                </div>
+                                <div class="counter-wrapper">
+                                    <div class="grid-container">
+                                        <div class="grid-item">
+                                            <div class="icon-wrapper">
+                                                <img class="counter-icons" src="images/avg-loan-per-user.png" alt="Average Loan per User" />
+                                            </div>
+                                            <div class="counter-text-wrapper">
+                                                <p class="counter-text-regular">Average Loan</p>
+                                                <p class="counter-text-italics">per user</p>
+                                            </div>
+                                            <div class="the-counter">
+                                                $<span class="count">0</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="icon-wrapper">
+                                                <img class="counter-icons" src="images/total-cash-all-users.png" alt="Total Cash Loans to all Users" />
+                                            </div>
+                                            <div class="counter-text-wrapper">
+                                                <p class="counter-text-regular">Total Cash Loans</p>
+                                                <p class="counter-text-italics">to all users</p>
+                                            </div>
+                                            <div class="the-counter">
+                                                $<span class="count">0</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="icon-wrapper">
+                                                <img class="counter-icons" src="images/total-savings-collected.png" alt="Total Savings Collected by all Users" />
+                                            </div>
+                                            <div class="counter-text-wrapper">
+                                                <p class="counter-text-regular">Total Savings Collected</p>
+                                                <p class="counter-text-italics">by all users</p>
+                                            </div>
+                                            <div class="the-counter">
+                                                $<span class="count">0</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="icon-wrapper">
+                                                <img class="counter-icons" src="images/avg-savings.png" alt="Average Savings per User" />
+                                            </div>
+                                            <div class="counter-text-wrapper">
+                                                <p class="counter-text-regular">Average Savings</p>
+                                                <p class="counter-text-italics">per user</p>
+                                            </div>
+                                            <div class="the-counter">
+                                                $<span class="count">0</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </section>
+        <svg id="svg-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 245.4"><defs><style>.a,.b{fill:#94bf3d;}.a{opacity:0.25;isolation:isolate;}</style></defs><title>svg-top</title><path class="a" d="M461.1,1055.4C295.9,1038.5,138,1053.2,0,1080.8v45.8c138.4-40.4,296.7-66.5,462.7-55.4,361.2,24.2,885.5,41.7,1217.3-79.2V933.3C1347.4,1075.6,821.5,1092.2,461.1,1055.4Z" transform="translate(0 -881.2)"/><path class="b" d="M511.2,1043.4c-17.8-1.9-35.3-4-52.4-6.4a1676.55,1676.55,0,0,0-232.1-15.3A1902.79,1902.79,0,0,0,0,1036.1v44.7c138-27.6,295.9-42.2,461.1-25.4,360.4,36.8,886.3,20.2,1218.9-122.1V881.2C1362,1033.9,867.7,1081.9,511.2,1043.4Z" transform="translate(0 -881.2)"/></svg>
+
+        <!-- SECTION: Above The Fold : Ends -->
+
+        <!-- SECTION: How It Works : Starts -->
+        <section id="how_it_works" class="hiw-wrapper">
+            <div class="container-wrapper">
+                <h2><mark>How It Works</mark></h2>
+                <div class="grid-container">
+                    <!--Row 1-->
+                    <div class="grid-item"></div>
+                    <div class="grid-item stamp one">
+                        <img src="images/step1.png" alt="STEP 1" class="step-icons" />
+                        <p class="step-text"><strong>Step 1</strong></p>
+                        <p class="step-text">Select Loan Preferences</p>
+                    </div>
+                    <div class="grid-item">
+
+                    </div>
+                    <div class="grid-item  stamp two">
+                        <img src="images/step2.png" alt="STEP 2" class="step-icons" />
+                        <p class="step-text"><strong>Step 2</strong></p>
+                        <p class="step-text">Fill Application Form</p>
+                    </div>
+                    <div class="grid-item">
+
+                    </div>
+                    <div class="grid-item stamp three">
+                        <img src="images/step3.png" alt="STEP 3" class="step-icons" />
+                        <p class="step-text"><strong>Step 3</strong></p>
+                        <p class="step-text">Recieve Your Funds</p>
+                    </div>
+                    <div class="grid-item">
+
+                    </div>
+                    <div class="grid-item stamp four">
+                        <img src="images/step4.png" alt="STEP 4" class="step-icons" />
+                        <p class="step-text"><strong>Step 4</strong></p>
+                        <p class="step-text">Recieve Your Savings</p>
+                    </div>
+                    <div class="grid-item"></div>
+                    <!--Row 2-->
+                    <div class="grid-item"></div>
+                    <div class="grid-item" style="padding-top:2em;">
+                        <a href="#money_mate_calculator" >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1117.08 985.09" id="arrows" class="arrows">
+                                <defs>
+                                    <style>.a{fill:none;stroke:#54939e;stroke-miterlimit:10;}</style>
+                                </defs>
+                                <polyline class="a3" points="0.38 350.23 558.54 984.33 1116.71 350.23"/>
+                                <polyline class="a2" points="133.67 183.61 558.99 666.8 984.32 183.61"/>
+                                <polyline class="a1" points="239.19 0.33 556.96 361.33 874.73 0.33"/>
+                            </svg>
+
+                        </a>
+                    </div>
+                    <div class="grid-item">
+
+                    </div>
+                    <div class="grid-item">
+
+                    </div>
+                    <div class="grid-item">
+
+                    </div>
+                    <div class="grid-item">
+
+                    </div>
+                    <div class="grid-item">
+
+                    </div>
+                    <div class="grid-item" style="text-align:right; padding-top:1em; padding-right:2.5em;">
+                        <a class="links" href="howitworks.html">Learn More</a>
+                    </div>
+                    <div class="grid-item"></div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION: How It Works : Ends -->
+
+        <!-- SECTION: Money Mate Calculator : Starts -->
+        <section id="money_mate_calculator" class="mmc-wrapper">
+            <div class="container-wrapper">
+                <h2><mark>MoneyMate Calculator</mark></h2>
+
+                <div id="Apply">
+                    <div id="slidecontainer">
+                        <br>
+                        <h3 class="text_heading">How much <em>cash</em> do you need?<span id="loan_amount"></span></h3>
+                        <input type="range" min="100" max="1500" value="200" step="10" class="slider" id="myRange">
+
+                        <h3 class="text_heading">How much <em >savings</em> would you like to receive?<span id="range_percent"></span></h3>
+
+
+                        <div id="savingsAmount">
+
+                            <fieldset>
+                                <label for="accessible">
+                                    <input type="radio" value=0 name="savings" id="accessible"> <span>0%</span>
+                                </label>
+
+                                <label for="pretty">
+                                    <input type="radio" value=25 name="savings" id="pretty"> <span>25%</span>
+                                </label>
+
+                                <label for="accessible-and-pretty">
+                                    <input type="radio" value=50 name="savings" id="accessible-and-pretty" checked> <span>50%</span>
+                                </label>
+
+                                <label for="accessible-and">
+                                    <input type="radio" value=100  name="savings" id="accessible-and"> <span>100%</span>
+                                </label>
+                            </fieldset>
+
+                        </div>
+
+
+                        <h3 class="text_heading">How often do you get paid at work?</h3>
+
+                        <div id="Payment_periods">
+                            <form>
+                            <div class="inline-radio">
+                                <div><input type="radio" name="repayment" value="weekly" id="weekly"><label for="weekly">Weekly</label></div>
+                                <div><input type="radio" name="repayment" value="biweekly" id="biweekly"><label for="biweekly">Bi-Weekly</label></div>
+                                <div><input type="radio" name="repayment" checked value="monthly" id="monthly"><label for="monthly">Monthly</label></div>
+                                <div><input type="radio" name="repayment" value="semimonthly" id="semimonthly"><label for="semimonthly">Semi-Monthly</label></div>
+                            </div>
+                            </form>
+                        </div>
+                        <h4 style="margin-top: 4em;">
+                            <span class="results loan">Loan Amount <br> <span id="amount" style="font-weight: 600;"></span></span>
+                            <span class="results plus"> <img src="images/plus.png" alt=""> </span>
+                            <span class="results saving">Saving Amount<br> <span id="range" style="font-weight: 600;"></span></span>
+                            <span class="results plus"> <img src="images/plus.png" alt=""> </span>
+                            <span class="results interest">Interest Amount <br> <span id="interest" style="font-weight: 600;"></span></span>
+                            <span class="results equals"> <img src="images/equals.png" alt=""> </span>
+                            <span class="results repay">Total Repayment <br> <span id="repayment" style="font-weight: 600;"></span></span>
+                        </h4>
+                        <br>
+                        <br>
+                        <h4 class="result_text">
+                            <span class="results">Loan Amount <br> <span id="repayment1" style="font-weight: 600;"></span></span>
+                            <span class="results"> <img src="images/slash.png" alt=""> </span>
+                            <span class="results">Number of Payments<br> <span id="instalment" style="font-weight: 600;"></span></span>
+                            <span class="results"> <img src="images/equals.png" alt=""></span>
+                            <span class="results">Payment per Paycheque <br> <span id="payment" style="font-weight: 600;"></span></span>
+
+                        </h4>
+                        <div class="button_div"><br>
+                            <button id="apply_button" class="btn btn-red" >Apply Now</button>
+                        </div>
+                        <div class="some__content">
+                            Terms
+                            <!--<h6>this is how we can make custom tooltips.</h6>-->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION: Money Mate Calculator : Ends -->
+
+        <!-- SECTION: Why Us? : Starts -->
+        <svg xmlns="http://www.w3.org/2000/svg" id="whyus-svg" viewBox="0 0 1798 894.11"><defs><style>.a{fill:#54939e!important;opacity:0.2;}</style></defs><title>whyussvg</title><path class="a" d="M1512.43,719.66a676.3,676.3,0,0,1-10.09,116.65H1739V603H1502.34A676.3,676.3,0,0,1,1512.43,719.66Z" transform="translate(59 -272.61)"/><path class="a" d="M1477.74,505.92H1739V272.61H1342.3A671.75,671.75,0,0,1,1477.74,505.92Z" transform="translate(59 -272.61)"/><path class="a" d="M1342.3,1166.71H1739V933.4H1477.74A671.75,671.75,0,0,1,1342.3,1166.71Z" transform="translate(59 -272.61)"/><path class="a" d="M167.57,719.66A676.3,676.3,0,0,1,177.66,603H-59v233.3H177.66A676.3,676.3,0,0,1,167.57,719.66Z" transform="translate(59 -272.61)"/><path class="a" d="M202.26,933.4H-59v233.31H337.7A671.59,671.59,0,0,1,202.26,933.4Z" transform="translate(59 -272.61)"/><path class="a" d="M337.7,272.61H-59V505.92H202.26A671.59,671.59,0,0,1,337.7,272.61Z" transform="translate(59 -272.61)"/></svg>
+        <section id="why_us" class="wu-wrapper">
+            <div class="grid-container">
+                <div class="wu-icon-hleft-top">
+                    <img class="wu-icon" src="images/why us icons-profile application setup.png" alt="icon"/>
+                    <p class="wu-text">Simple Application<br />Process</p>
+                </div>                        
+                <div class="wu-icon-hright-top">
+                    <img class="wu-icon" src="images/why us icons-fast approval.png" alt="icon"/>
+                    <p class="wu-text">Instant<br />Approval</p>
+                </div>                        
+                <div class="wu-icon-vleft-top">
+                    <img class="wu-icon" src="images/why us icons-no credit check.png" alt="icon"/>
+                    <p class="wu-text">No Credit<br />Check</p>
+                </div>                        
+                <div class="wu-icon-vright-top">
+                    <img class="wu-icon" src="images/why us icons-cheaper.png" alt="icon"/>
+                    <p class="wu-text">Cheaper than<br />Payday Loans</p>
+                </div>                        
+                <div class="wu-icon-vleft-bottom">
+                    <img class="wu-icon" src="images/why us icons-build savings.png" alt="icon"/>
+                    <p class="wu-text">You Build<br />Savings</p>
+                </div>                        
+                <div class="wu-icon-vright-bottom">
+                    <img class="wu-icon" src="images/why us icons-customer service.png" alt="icon"/>
+                    <p class="wu-text">Best Customer<br />Service</p>
+                </div>                        
+                <div class="wu-icon-hleft-bottom">
+                    <img class="wu-icon" src="images/why us icons-longer period of time.png" alt="icon"/>
+                    <p class="wu-text">Longer Repayment<br />Period</p>
+                </div>                        
+                <div class="wu-icon-hright-bottom">
+                    <img class="wu-icon" src="images/why us icons-security certificate.png" alt="icon"/>
+                    <p class="wu-text">Licenced &<br />Secure Platform</p>
+                </div>                        
+                <div class="wu-illustration-center">
+                    <h2><mark>Why Us</mark></h2>
+                </div>                        
+            </div>
+        </section>
+        <!-- SECTION: Why Us? : Ends -->
+
+        <!-- SECTION: FAQ : Starts -->
+        <section id="faq" class="faq-wrapper">
+            <div class="container-wrapper">
+                <h2><mark>FAQs</mark></h2>
+                <div class="grid-container" id="faqs">
+                    <div class="faq-questions-before">What is the Savings and how does it work?</div>
+                    <div id="answer">
+                    <div class='speech-bubble'>
+                        <p> The Savings is a feature that is incorporated into the loan. We essentially set aside a portion of your payments towards your Savings and then direct deposit it into your account once you’ve payed off your loan.</p>
+                    </div></div>
+                    <div class="faq-questions-before">What do I need to be eligible for this loan?</div>
+                    <div class="faq-questions-before">What if I have bad credit or no credit history?</div>
+                    <div class="faq-questions-before">When can I expect to recieve my cash advance?</div>
+                </div>
+
+                <p class="link-text"><a class="links" href="faq.html">More FAQs</a></p>
+            </div>
+        </section>
+        <!-- SECTION: FAQ : Ends -->
+
+        <!-- SECTION: Testimonials : Starts -->
+            <section id="testimonials" class="ttm-wrapper">
+                <div class="container-wrapper">
+                    <h2><mark>Testimonials</mark></h2>
+                    <div id="ttm" class="inner-wrapper"></div>
+                </div>
+
+            </section>
+        <!-- SECTION: Testimonials : Ends -->
+
+        <!--Footer Starts-->
+        <footer>
+            <div class="footer-svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 392.18" class="footer-svg">
+                    <defs>
+                        <style>
+                            .a,.b{fill:#94bf1f;}.a{opacity:0.25;}
+                        </style>
+                    </defs>
+                    <path class="a" d="M980,523.63c360.49-1,790.53-72.6,940-99.56V344.83c-150,44.32-582.15,162-942.76,163.06-331.1.95-725.52-87.34-977.24,42.37V624C252.46,474.45,648.69,524.58,980,523.63Z" transform="translate(0 -344.83)"/>
+                    <path class="b" d="M1920,511.57v-87.5c-149.44,27-579.48,98.52-940,99.56-331.34,1-727.57-49.18-980,100.4V737C253.31,554.55,651.39,540.33,982.83,539.37,1343,538.34,1770.83,518.9,1920,511.57Z" transform="translate(0 -344.83)"/>
+                </svg>
+            </div>
+            <div common-footer="footer.html"></div>
+        </footer>
+        <!--Footer Ends-->
+
+        <!--JavaScript Starts-->
+        
+        <!--JavaScript Ends-->
+        <script>    //calculator
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("loan_amount");
+        output.innerHTML = "$"+slider.value;
+        var savings = $('input[name=savings]:checked').val();
+        var repayment = $('input[name=repayment]:checked').val();
+        // output1.innerHTML = $("input[name=repayment]:checked").val()+"%";
+
+        $('input[name=repayment]').click(function(){
+            repayment = $('input[name=repayment]:checked').val();
+            calculation();
+
+
+        });
+        slider.oninput = function() {
+            output.innerHTML = "$"+slider.value;
+            calculation();
+        };
+
+        $('input[name=savings]').click(function(){
+            savings = $('input[name=savings]:checked').val();
+            calculation();
+
+        });
+
+        function calculation() {
+            var loan_amount = slider.value;
+
+            var range_percent = savings;
+            var range_value = (range_percent / 100) * loan_amount;
+            var interest_value = (15 / 100) * loan_amount;
+            var Total_Repayment = parseFloat(loan_amount) + parseFloat(range_value) + parseFloat(interest_value);
+
+            document.getElementById("amount").innerHTML = "$" + parseFloat(loan_amount).toFixed(2);
+            document.getElementById("range").innerHTML = "$" + parseFloat(range_value).toFixed(2);
+            document.getElementById("interest").innerHTML = "$" + parseFloat(interest_value).toFixed(2);
+            document.getElementById("repayment").innerHTML = "$" + parseFloat(Total_Repayment).toFixed(2);
+            document.getElementById("repayment1").innerHTML = "$" + parseFloat(Total_Repayment).toFixed(2);
+
+
+
+            var Payment_periods;
+
+            switch(repayment){
+                case 'weekly':
+                    Payment_periods = 8;
+                    break;
+                case 'biweekly':
+                    Payment_periods = 4;
+                    break;
+                case 'monthly':
+                    Payment_periods = 2;
+                    break;
+                case 'semimonthly':
+                    Payment_periods = 4;
+                    break;
+                default:
+                    Payment_periods = 8;
+            }
+            var payment = parseFloat(Total_Repayment) / parseFloat(Payment_periods);
+            document.getElementById("instalment").innerHTML = Payment_periods;
+            document.getElementById("payment").innerHTML = "$" + parseFloat(payment).toFixed(2);
+        }
+
+
+        var apply = document.getElementById('apply_button');
+        apply.addEventListener('click', function(){
+
+            var loan_amount = slider.value;
+            console.log(savings);
+            var link = 'https://borrowave.turnkey-lender.com/Lending#/stepRegister?amount=' + loan_amount + '&term=2&savings=' + savings + '&product=' + repayment;
+            console.log(link);
+            // window.location.href = link;
+
+        });
+
+
+
+
+        </script>
+    </body>
+
+</html>

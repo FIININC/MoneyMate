@@ -1,0 +1,24 @@
+/*-- Declaring the Import SCSS Files --*/
+@import 'variables.scss'; //Importing the files containing all the variables
+
+.lending-article-container{
+	width:100%;
+	height:100%;
+	margin-bottom: 2em;
+	text-align: left;
+	position: relative;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	overflow: auto;
+
+	.article-wrapper{
+		width:$primary-wrapper;
+		height: 100%;
+		margin: 2em auto;
+		padding: 1em 5em 1em 5em;
+		text-align: justify;
+		font-family: $body-font;
+		color: $header-color;
+		font-size: 0.75em;
+	}
+}

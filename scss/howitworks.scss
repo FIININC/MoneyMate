@@ -1,0 +1,207 @@
+/*-- Declaring the Import SCSS Files --*/
+@import 'variables.scss'; //Importing the files containing all the variables
+
+.hiw-article-container{
+	width:100%;
+	height:100%;
+	margin-bottom: 2em;
+	position: relative;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	text-align: center;
+
+	.article-wrapper-odd{
+		background-color: #edf4f5;
+		height: 100%;
+		margin: 2em auto;
+		padding: 1em 5em 1em 5em;
+		text-align: left;
+
+		.grid-container {
+			display: grid;
+			grid-template-columns: 10% 55% 35%;
+		}
+
+		.grid-item {
+			align-self: flex-start;
+
+			.icon-img{
+				object-fit: contain;
+				width: 100%;			
+				//max-height: 100%;
+				overflow: hidden;
+			}
+
+			.stepnum{
+				font-family: $body-font;
+				font-size: 4.5em;
+				font-weight: bolder;
+				color: $stepnum-color;
+				text-align: right;
+			}
+
+			.steps{
+				font-family: $body-font;
+				font-size: 1em;
+				color: $header-color;
+				line-height: 1.2em;
+				padding-right: 7em;
+				text-align: justify;
+			}
+		}
+	}
+
+	.article-wrapper-even{
+		background-color: $body-color;
+		height: 100%;
+		margin: 0 auto;
+		margin-top: 2em;
+		padding: 1em 5em 1em 5em;
+		text-align: right;
+
+		.grid-container {
+			display: grid;
+			grid-template-columns: 35% 55% 10%;
+		}
+
+		.grid-item {
+			align-self: flex-start;
+
+			.icon-img{
+				object-fit: contain;
+				width: 100%;			
+				//max-height: 100%;
+				overflow: hidden;
+			}
+
+			.stepnum{
+				font-family: $body-font;
+				font-size: 4.5em;
+				font-weight: bolder;
+				color: $stepnum-color;
+				text-align: left;
+			}
+
+			.steps{
+				font-family: $body-font;
+				font-size: 1em;
+				color: $header-color;
+				line-height: 1.2em;
+				padding-left: 7em;
+				text-align: justify;
+			}
+		}
+
+	}
+
+}
+#money_mate_calculator--advanced{
+	-webkit-box-shadow: 0px 0px 38px -6px rgba(36,36,36,0.48);
+	-moz-box-shadow: 0px 0px 38px -6px rgba(36,36,36,0.48);
+	box-shadow: 0px 0px 38px -6px rgba(36,36,36,0.48);
+	font-size: 0.8em;
+	#Apply{
+		display: inline-block;
+	}
+	.graph {
+		height: 35em;
+		position: relative;
+		display: inline-block;
+		bottom: 4em;
+		left: 3em;
+	}
+	.graph {
+		display: inline-block;
+		text-align: center;
+		margin: 0 auto;
+		transform: translateX(100%);
+		position: relative;
+		bottom: 2em;
+	}
+
+
+	mark {
+		//background-color: rgba(148, 191, 31, 0.15);
+		display: inline-block;
+		line-height: 0.3em;
+		padding: 0 1em 0.5em 1em;
+		border-radius: 0.5em;
+		color: #000;
+		margin-top: 2em;
+	}
+	.interest{
+		mark {
+			background: rgba(193, 193, 193, 0.45);
+
+		}
+	}
+	.saving{
+		mark {
+			background-color: rgba(84, 147, 158, 0.25);
+		}
+	}
+	.loan{
+		mark {
+			background-color: rgba(148, 191, 31, 0.25);
+		}
+	}
+	.graph{
+		display: inline-block;
+		div{
+			display: block;
+			width: 6em;
+		}
+		#loanAmt{
+			height: 60%;
+			background: $applynow-green;
+		}
+		#savings{
+			height: 30%;
+			background: $subheader-color;
+		}
+		#interestAmt{
+			height: 10%;
+			background: darken(#ebebeb, 15%);
+		}
+	}
+	h3{
+		color: $header-color;
+	}
+	em{
+		color: $applynow-green;
+	}
+	.slider{
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		width: 100%;
+		height: 5px;
+		border-radius: 2.5px;
+		background: darken(#ebebeb, 10%);
+		outline: none;
+		opacity: .9;
+		transition: opacity .2s;
+		&::-webkit-slider-thumb{
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			border-radius:50%;
+			width: 2em;
+			height: 2em;
+			background: $applynow-green;
+			cursor: pointer;
+
+		}
+	}
+	h3 span{
+		color: $applynow-green;
+		float: right;
+	}
+}
+
+#money_mate_calculator--advanced{
+	#Apply{
+		width: 60%;
+		font-size: 0.8em;
+	}
+}

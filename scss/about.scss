@@ -1,0 +1,41 @@
+@import 'variables.scss'; //Importing the files containing all the variables
+
+.about-article-container{
+	width:100%;
+	margin-bottom: 2em;
+	text-align: left;
+	position: relative;
+	padding-top: 3em;
+	padding-bottom: 3em;
+
+
+	.article-wrapper{
+		width:$primary-wrapper;
+		//height:100%;
+		margin-top: 2em;
+		padding: 0em 5em 0em 5em;
+	}
+
+	.grid-container {
+		display: grid;
+		grid-template-columns: [col] 60% [col] 40%;
+	}
+
+	.grid-item {
+		text-align: left;
+		font-family: $body-font;
+		color: $header-color;
+		font-size: 1em;
+		padding-right: 3em;
+		align-self: center;
+
+		.illustration-img{
+			object-fit: contain;
+			width: 75%;
+			//max-height: 100%;
+			overflow: hidden;
+			float: right;
+		}
+	}
+	line-height: 1.25em;
+}

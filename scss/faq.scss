@@ -1,7 +1,12 @@
 /*-- Declaring the Import SCSS Files --*/
 @import 'variables.scss'; //Importing the files containing all the variables
 
-.article-container{
+.faq-article-container{
+	h2{
+		width: 100%;
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
 	width:100%;
 	margin-bottom: 2em;
 	text-align: left;
@@ -175,5 +180,19 @@ h2{
 	position: relative;
 	top: 3em;
 	padding-bottom: 10em;
-
+	display: grid;
+	grid-template-columns: [col] 60% [col] 40%;
+.page-about{
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+	.wave{
+		grid-column-start: 2;
+		grid-column-end: 2;
+		position: relative;
+		top: 10em;
+		img{
+			width: 90%;
+		}
+	}
 }

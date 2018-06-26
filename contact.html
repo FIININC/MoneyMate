@@ -3,7 +3,7 @@
     <head>
 
         <title>MoneyMate</title>
-
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <!--META SETS Starts-->
 
         <!--META SETS Ends-->
@@ -58,7 +58,6 @@
                         <li><a href="#money_mate_calculator" class="btn btn-red">APPLY NOW</a></li>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="howitworks.html">How It Works</a></li>
-                        <li><a href="about.html">Why Us</a></li>
                         <li><a href="faq.html">FAQs</a></li>
                         <li><a href="https://borrowave.turnkey-lender.com/Lending#/">Log In</a></li>
                     </ul>
@@ -114,8 +113,8 @@
 
                                     // Styles a map in night mode.
                                     var map = new google.maps.Map(document.getElementById('map'), {
-                                        center: {lat: 43.71030, lng: -79.398723},
-                                        zoom: 12,
+                                        center: {lat: 43.65101525972951, lng: -79.4248434303034},
+                                        zoom: 14,
                                         disableDefaultUI: true,
                                         styles: [
                                             {
@@ -300,8 +299,8 @@
 
                                     // Multiple Markers
                                     var markers = [
-                                        ['SPACES', 43.663296, -79.341303],
-                                        ["ATHLETE'S CARE, Toronto", 43.710236, -79.398849]
+                                        ['SPACES', 43.65072026765317, -79.39167884425979],
+                                        ["Spaces, Toronto", 43.65072026765317, -79.39167884425979]
                                     ];
 
                                     // Loop through our array of markers & place each one on the map
@@ -317,21 +316,15 @@
 
 
                                         // Automatically center the map fitting all markers on the screen
-                                        map.fitBounds(bounds);
                                     }
 
-                                    // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
-                                    var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
-                                        this.setZoom(12);
-                                        google.maps.event.removeListener(boundsListener);
-                                    });
 
 
 
 
                                 }
                             </script>
-                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUI_ppA7-H7t_PfZw_FwykuAfsXvFW-4c&amp;callback=initMap" async="" defer=""></script>
+                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACI63-ryzNdu0bOI208MDEN4TVbMtxZLg&amp;callback=initMap" async="" defer=""></script>
 
 
                             </div>

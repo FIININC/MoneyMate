@@ -40,20 +40,40 @@ $black: #1a1b18;
 $color1: #3C91E6;
 $color2: #DE541E;
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+
+
+  .modalbg:target .dialog {
+    top: 130px;
+    background: transparent;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .home #mainNav .navBars{
+    color: white;
+  }
+
+  #testimonials{
+    padding-top: 4em;
+  }
+
+  .faq-questions-after{
+  }
   #money_mate_calculator--advanced {
     #Apply {
       width: 100%;
     }
 
     .graph {
-      height: 15em;
+      height: 25em;
       display: inline-block;
       text-align: center;
       margin: 0 auto;
       transform: translateX(100%);
       position: relative;
-      bottom: 6em;
+      bottom: 36em;
+      left: 11em;
     }
     .button_div {
       position: relative;
@@ -81,21 +101,19 @@ $color2: #DE541E;
     }
     .results {
       width: 7em;
-      display: inline-block;
+      display: block;
       font-size: 0.8em;
       color: #242424;
-
+      padding-bottom: 1.5em;
 
 
     }
     .numPayments{
       display: none;
     }
-    .equals{
-      width: 100%;
-      padding-top: 2em;
-      padding-bottom: 2em;
-      transform: translateX(35%);
+    .repay{
+      left: 0;
+      font-size: 1em;
     }
     #Payment_periods{
       h4:first-of-type{
@@ -105,7 +123,7 @@ $color2: #DE541E;
     }
 
     .result_text{
-      display: inline-block;
+      display: none;
       width: 20%;
       right: 0;
       bottom: 10.5em;
@@ -126,6 +144,7 @@ $color2: #DE541E;
     }
 
   }
+
 
   [name="savings"] + span:before {
     content: '';
@@ -167,8 +186,61 @@ $color2: #DE541E;
   }
   fieldset label:nth-child(2) span:before {
     position: relative;
-    left: 4.55em;
+    left: 2.55em;
   }
+  fieldset label:nth-child(2) span {
+    position: relative;
+    right: 3em;
+  }
+  fieldset label:nth-child(3) span {
+    position: relative;
+    right: 1em;
+  }
+  fieldset label:nth-child(4) span {
+    position: relative;
+    left: -2em;
+  }
+  .results {
+    width: 7em;
+    display: inline-block;
+    font-size: 0.6em;
+    color: #242424;
+  }
+
+  .equals{
+    display: block;
+    padding: 2em;
+    position: relative;
+    right: 6em;
+    text-align: center;
+    width: 100%;
+  }
+
+  .repay{
+    position: relative;
+    left: 3em;
+  }
+  .result_text .results:nth-of-type(1){
+    display: none;
+  }
+  .result_text .results:nth-of-type(2){
+    position: relative;
+    left: 24em;
+    bottom: 8.5em;
+  }
+  .result_text .results:nth-of-type(3){
+    display: none;
+  }
+  .result_text .results:nth-of-type(4){
+    display: none;
+  }
+  .result_text .results:nth-of-type(5){
+    position: relative;
+    left: 30em;
+    bottom: 8.5em;
+  }
+
+  
   label {
     display: block;
     cursor: pointer;
@@ -177,8 +249,13 @@ $color2: #DE541E;
   }
 
 
-  .faq-wrapper .container-wrapper{
-    width: 80%;
+  .faq-wrapper {
+    background-position-y: 10em;
+    background-position-x: -15em;
+    background-size: 230%;
+    .container-wrapper {
+      width: 80%;
+    }
   }
   .mainNav .menu{
     background: $menu-color;
@@ -186,7 +263,8 @@ $color2: #DE541E;
   }
 
   h2{
-    display: inline;
+    display: inline-block;
+    width: 100%;
   }
 
   .about-article-container{
@@ -204,16 +282,21 @@ $color2: #DE541E;
     }
     .grid-container{
       grid-template-columns: [col] 100%;
-      .grid-item:first-child{
+      .grid-item{
         width: 100%;
         display: block;
         padding-top: 2em;
         line-height: 1.5em;
       }
+      .grid-item:last-of-type{
+        grid-row: 2;
+      }
     }
   }
 footer {
-  border-radius: 100% 140% 0 0 / 10% 0 0 0;
+  border-radius: 100% 44% 0 0 / 10% 0 0 0;
+  font-size: 0.75em;
+  padding-top: 1.5em;
   .grid-container{
     display: grid;
     grid-template-columns: [col] 50% [col] 50%;
@@ -297,11 +380,50 @@ footer {
     padding: 5em 0;
   }
 
-  .faw-wrapper .faq-questions-after {
+  .faq-wrapper {
+    .grid-container{
+      display: block;
+    }
+    .faq-questions-after {
       grid-column-end: 4;
-    width: 100%;
+      width: 90%;
+      margin-bottom: 0.5em;
+    }
+    .faq-questions-before{
+      margin-bottom: 0.5em;
+    }
+    .speech-bubble{
+      position: relative;
+      z-index: 20;
+      padding: 1.25em 1.5em;
+      margin-bottom: .6em;
+      grid-column: 1;
+      height: auto;
+
+      &:before{
+        content: "";
+        position: absolute;
+        top: -2.5em;
+        transform: rotate(90deg);
+        left: 4em;
+        border-top: 0px solid transparent;
+        border-bottom: 33px solid transparent;
+        border-right: 19px solid #54939e;
+        margin: 13px 0 0 -25px;
+      }
     }
 
+    div[id^=answer]{
+      right: 0;
+      padding-top: 1em
+    ;
+    }
+  }
+
+  @keyframes expand {
+    0%    {opacity: 0; max-height: 0; }
+    100%  {opacity: 1; max-height: 30em; }
+  }
 
   .atf-img-wrapper {
     display: none;
@@ -374,20 +496,20 @@ footer {
     display: grid;
     grid-template-columns: [col] 50% [col] 50%;
     grid-template-rows: repeat(9, auto);
-    padding-top: 3em;
+    padding-top: 0;
     padding-left: 1em;
     padding-right: 1em;
+  }
+
+  #why_us{
+    margin-top: 0;
   }
 
   .wu-wrapper div[class^=wu-icon] img{
     height: 5em;
   }
 
-  .faq-wrapper {
-    background-position-y: 4em;
-    background-position-x: -16em;
-    background-size: 230%;
-  }
+
 
   .wu-wrapper .wu-icon-hleft-top {
     grid-column-start: 1;
@@ -441,7 +563,7 @@ footer {
 
   // wave svg
   #svg-top {
-    top: 86em;
+    top: 97em;
   }
 
   .inline-radio div {
@@ -501,7 +623,7 @@ footer {
     margin: 0 auto;
   }
   #contact{
-
+    padding-top: 4em;
     p{
       width: 100%;
       text-align: left;
@@ -570,6 +692,8 @@ footer {
     color: $white;
     max-height: 70px;
     position: relative;
+    overflow: visible;
+
 
     a {
       text-decoration: none;
@@ -614,16 +738,18 @@ footer {
       margin: 0;
       padding: 0;
       text-align: center;
-
+      li{
+        display: block;
+      }
       @include position(absolute, 60px, 0, null, 0);
 
       a {
         font-weight: bold;
         display: block;
         padding: 15px;
-
+        color: white;
         &:hover {
-          background: darken($menu-color, 30%);
+          background: darken($menu-color, 15%);
           color: $white;
         }
       }
@@ -649,13 +775,16 @@ footer {
     }
   }
 
+.blog-article-container{
+  padding-top: 5em;
+}
 }
 
 
 
 
 
-@media screen and (min-width: 769px) and (max-width: 1023) {
+@media screen and (min-width: 769px) and (max-width: 1023px) {
   #whyus-svg{
     top: 412vh;
   }
@@ -891,4 +1020,112 @@ footer {
   }
 
 }
+}
+
+
+
+@media screen and (min-width: 1024px){
+  #svg-top{
+    top: 52em;
+  }
+
+  #whyus-svg{
+    top: 245vh;
+  }
+
+  .faq-wrapper{
+    background-position-y: 6em;
+    padding-top: 8em;
+  }
+
+  .some__content{
+    bottom: 6.5em;
+  }
+
+  .result_text{
+    right: 29em;
+  }
+
+  .mmc-wrapper{
+    h2{
+      width: 100%;
+
+    }
+    min-height: 70vh;
+
+  }
+  .home .scrolled{
+    padding-bottom: 2em;
+  }
+
+  .hiw footer{
+    margin-top: 13em;
+  }
+
+  #money_mate_calculator--advanced {
+    .graph div {
+      display: block;
+      width: 16em;
+    }
+    .result_text{
+      right: 3em;
+    }
+  }
+
+  #contact{
+    .article-wrapper{
+      padding-top: 5em;
+      margin: 0 auto;
+    }
+    form{
+      input[type="submit"]{
+        float: right;
+        left: 0.5em;
+      }
+      .field{
+        //padding-bottom: 1em;
+        input[type="text"], textarea{
+          padding: 21px 0;
+          padding-left: 21%;
+        }
+      }
+    }
+    .map-div{
+      height: 48em;
+      position: relative;
+      right: 6em;
+      #map{
+        height: 35em;
+      }
+    }
+    #hire{
+      bottom: 25em;
+    }
+  }
+  .wu-wrapper .wu-icon-vleft-top {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+
+  .wu-wrapper .wu-icon-vright-top {
+    grid-column-start: 8;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+
+  .wu-wrapper .wu-icon-vleft-bottom {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+  .wu-wrapper .wu-icon-vright-bottom {
+    grid-column-start: 8;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
 }
